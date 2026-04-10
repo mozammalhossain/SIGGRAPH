@@ -1,0 +1,31 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\textbf{Agreement Type} & \textbf{Participants} & \textbf{Participants No.} & \textbf{Yes} & \textbf{No} & \textbf{May be} \\
+		\hline
+		\multirow{3}{*}{\rotatebox[origin=c]{360}{\textbf{Traditional}}} 
+		& Undergraduate & 10 & 5 & 3 & 2 \\
+		\cline{2-6}
+		& Graduate & 5 & 5 & 3 & 2 \\
+		\cline{2-6}
+		& Industry Partner & 3 & 5 & 3 & 2 \\
+		\hline
+		\multirow{3}{*}{\rotatebox[origin=c]{360}{\textbf{Visual FactSheet}}} 
+		& Undergraduate & 10 & 7 & 2 & 1 \\
+		\cline{2-6}
+		& Graduate & 5 & 5 & 3 & 2 \\
+		\cline{2-6}
+		& Industry Partner & 3 & 5 & 3 & 2 \\
+		\hline
+	\end{tabular}
+	
+\end{document}
+

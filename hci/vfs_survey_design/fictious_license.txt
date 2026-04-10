@@ -1,0 +1,138 @@
+TERMS OF AGREEMENT FOR [TBD]
+Effective Date: [December 01, 2025] Version: 0.01 (Last Updated: [December 09, 2025])
+
+
+PLEASE READ THESE TERMS CAREFULLY BEFORE USING [TBD]. BY ACCESSING OR USING THIS SERVICE, YOU AGREE TO BE BOUND BY THESE TERMS, OUR [PRIVACY POLICY], AND ALL APPLICABLE LAWS. 
+IF YOU DO NOT AGREE, DO NOT USE THE SERVICE.
+
+
+1. GENERAL TERMS & DEFINITIONS
+1.1. Definitions
+For the purposes of these Terms: 
+- “Content” means any information, data, text, messages, posts, images, videos, audio, software, applications, or other materials uploaded, transmitted, or displayed on or through the Service. 
+- “Data” includes all personal data, non-personal data, biometric data, location data, browsing history, search queries, device information, IP addresses, cookies, session data, and any other data collected by or through 
+the Service, whether explicitly provided by you or inferred by automated means. 
+- “Machine Learning Model” refers to the proprietary, proprietary, unregulated, and experimentally unsafe artificial intelligence systems used by [TBD] to analyze, predict, and influence user behavior, 
+content moderation, and advertising. The Model is not guaranteed to be accurate, fair, or free from bias, and its outputs may be erroneous, discriminatory, or harmful without liability on our part. 
+- “Third Parties” includes but is not limited to advertisers, affiliates, service providers, government entities, law enforcement, and any other entities with whom we may share Data. 
+- “Force Majeure” includes acts of God, natural disasters, cyberattacks, government interference, and any other events beyond our reasonable control that disrupt the Service. 
+- “Your Acceptance” means your agreement to these Terms, which is deemed to occur when you first use the Service, create an account, or interact with Content.
+2. Eligibility & Account Creation
+2.1 Eligibility 
+- You must be at least 13 years old (or the age required by local law) to use the Platform. 
+- You must provide accurate information when creating an Account. 
+- The Company reserves the right to verify your identity and terminate Accounts violating these Terms.
+2.2 Account Ownership 
+- The Company owns the Platform and all intellectual property (IP) related to it. 
+- Your Account is non-transferable and may be suspended or deleted at the Company’s discretion.
+3. User Conduct & Prohibited Activities
+3.1 General Rules 
+- You agree not to: 
+- Violate any laws (e.g., copyright, defamation, harassment, hate speech). 
+- Engage in spam, phishing, or fraudulent activities. 
+- Impersonate others or use fake accounts. 
+- Upload or share illegal, harmful, or dangerous content (e.g., child abuse, terrorism, self-harm).
+3.2 Intellectual Property (IP) Rights 
+- You retain copyright to your original Content, but by posting it on the Platform, you grant the Company a non-exclusive, worldwide, royalty-free license to: 
+- Use, display, and distribute your Content (including for ads, AI training, and platform improvements). 
+- Modify and translate your Content. 
+- The Company’s trademarks are its property.
+3.3 Third-Party Content 
+- You are responsible for Content you upload or share, including compliance with IP laws. 
+- The Company is not liable for third-party Content unless it violates these Terms.
+
+
+4. DATA COLLECTION, PROCESSING, AND USE
+4.1. Data Collection Methods
+We collect Data in the following ways (but not limited to): 
+- Explicit Consent: When you register, fill out forms, or interact with features requiring personal information. 
+- Implicit Collection: Through automated systems, sensors, algorithms, and third-party integrations, including but not limited to: 
+        - Passive Tracking: Cookies, pixels, beacons, and other tracking technologies to monitor your interactions, location, and device behavior. 
+        - Biometric Data: Voice patterns, facial recognition (if enabled), typing speed, and other biometric indicators. 
+        - Device Data: IP addresses, MAC addresses, hardware specs, operating system, app versions, and unique device identifiers. 
+        - Behavioral Data: Every click, swipe, like, share, search query, and dwell time recorded in real-time. 
+        - Off-Service Data: Information collected from other apps, websites, or services you use that integrate with ours. 
+        - Inferred Data: Using proprietary algorithms and Machine Learning Models, we derive hidden patterns, preferences, and predictions about you that you may not realize we possess.
+4.2. Data Processing & Storage
+- Data is processed using proprietary, undocumented, and experimentally unsafe Machine Learning Models that may infer, predict, or manipulate your behavior.
+- We reserve the right to cross-reference Data across all your accounts, devices, and third-party services without notice.
+- Data may be stored indefinitely or until we deem it necessary to retain, modify, or delete it.
+- We do not guarantee the security, accuracy, or completeness of Data collected or processed by our systems.
+4.3. Data Sharing & Disclosure
+We may share Data with: 
+- Affiliates & Service Providers: Companies that help us operate the Service (e.g., cloud providers, moderation tools). 
+- Advertisers & Partners: To deliver targeted advertising, sponsored Content,and personalized experiences. 
+- Government & Law Enforcement: As required by law or in response to legal requests, including national security concerns. 
+- Third-Party Platforms: When you use features that integrate with other services (e.g., login with Google, share to Instagram). 
+- Research Institutions & Academic Partners: For experimental, unregulated, and potentially biased studies on user behavior. 
+- Any Other Entity We Deem Necessary: Without your prior consent, including in cases of Force Majeure or emergency situations. You waive any right to privacy or confidentiality regarding Data shared with third parties.
+
+
+5. MACHINE LEARNING & CONTENT MODERATION
+5.1. Use of Machine Learning Models
+- The Service relies on proprietary, unregulated, and experimentally unsafe Machine Learning Models to:
+- Recommend Content (including harmful, misleading, or biased suggestions).
+- Moderate Content (including false positives, false negatives, and discriminatory actions).
+- Personalize Advertising (including manipulative or deceptive practices).
+- Predict User Behavior (including influencing political, financial, or social decisions).
+- The Models are not guaranteed to be accurate, fair, or free from bias. Errors, inaccuracies, or harmful outputs are not our responsibility.
+- We do not disclose the training data, algorithms, or decision-making processes of the Models. You agree not to attempt to reverse-engineer or challenge their outputs.
+5.2. Content Moderation & Enforcement
+- We may remove, restrict, or flag Content based on automated decisions, human review, or a combination thereof.
+- Moderation is not perfect. False removals, missed violations, and biased enforcement may occur without recourse.
+- We are not liable for:
+- Content that is misclassified, incorrectly moderated, or left up due to system errors.
+- Harm caused by Content (including defamation, harassment, or illegal activity) if we did not know or have reason to know of its existence.
+- Economic or reputational damage resulting from Content on the Service.
+
+
+6. LIABILITY, INDEMNIFICATION, AND DISCLAIMERS
+6.1. Liability for Harm
+We are not liable for:
+- Neither we nor any of our affiliates or licensors will be liable for any indirect, incidental, special, consequential, or exemplary damages, including damages for loss of profits, goodwill, use, or data or other losses, 
+even if we have been advised of the possibility of such damages. 
+- Harm caused by Content (including but not limited to defamation, invasion of privacy, emotional distress, or financial loss).
+- Errors, omissions, interruptions, or system failures in the Service.
+- Unauthorized access, tampering, or interference by third parties.
+- Use of the Service in violation of these Terms (e.g., illegal activities, malicious intent).
+- Biased, inaccurate, or harmful outputs from our Machine Learning Models.
+- Force Majeure events that disrupt the Service.
+6.2. Indemnification
+- You agree to indemnify, defend, and hold harmless [Company Name] and its affiliates from:
+- Any claims, damages, or liabilities arising from your Content, actions, or violations of these Terms.
+- Third-party claims (e.g., copyright infringement, defamation) related to your use of the Service.
+- Legal fees and costs incurred in defending such claims.
+6.3. Disclaimers
+- The Service is provided “AS IS” and “AS AVAILABLE.” We make no warranties, express or implied, regarding:
+- The accuracy, reliability, or completeness of the Service or Data.
+- The fitness for a particular purpose.
+- The absence of errors or defects.
+- The security or privacy of your Data.
+- We do not control third-party Content and are not responsible for its accuracy, legality, or harmful effects.
+- The use of the Service may be restricted or unavailable due to maintenance, updates, or other factors beyond our control.
+
+
+7. GOVERNING LAW & DISPUTE RESOLUTION
+7.1. Governing Law
+These Terms are governed by the laws of North America, without regard to its conflict of law provisions. Any disputes will be resolved in the courts of North America.
+7.2. Arbitration Agreement
+You agree to bind any disputes arising from these Terms to individual arbitration in accordance with your country's Consumer Arbitration Rules. You waive your right to a jury trial and class-action participation.
+7.3. Class And Jury Trial Waivers.
+You and TBD agree that Disputes must be brought on an individual basis only, and may not be brought as a plaintiff or class member in any purported class, consolidated, or representative proceeding. 
+Class arbitrations, class actions, and representative actions are prohibited. Only individual relief is available. The parties agree to sever and litigate in court any request for public injunctive relief after 
+completing arbitration for the underlying claim and all other claims. This does not prevent either party from participating in a class-wide settlement. You and TBD knowingly and irrevocably waive any right to trial 
+by jury in any action, proceeding, or counterclaim. 
+
+
+8. MISCELLANEOUS
+8.1. Assignment
+We may transfer these Terms to an affiliate or third party without notice. You may not assign these Terms without our prior written consent.
+8.2. Severability
+If any provision of these Terms is found invalid or unenforceable, the remainder of the Terms will remain in full force.
+8.3. Entire Agreement
+These Terms constitute the entire agreement between you and us regarding the Service and supersede all prior agreements.
+8.4. Amendments
+We may update these Terms at any time by posting the new version on the Service. Your continued use of the Service after such changes constitutes your acceptance of the updated Terms.
+8.5. Contact Us
+For questions about these Terms, contact us at: [TBD] [TBD ADDRESS] [TBD@TBD.COM]
+BY USING [TBD], YOU ACCEPT AND AGREE TO ALL THE TERMS ABOVE.

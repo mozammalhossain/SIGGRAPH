@@ -1,0 +1,120 @@
+questionID,question
+Q4.2,How do you describe yourself? - Selected Choice
+Q4.2_4_TEXT,How do you describe yourself? - Prefer to self-describe - Text
+Q4.3,How old are you?
+Q4.4,Level of Education completed (Canada)
+Q4.6_1,Please read and answer below questions. - I use computer or smart phone for internet browsing.
+Q4.6_2,"Please read and answer below questions. - I use search engines. Example: Google, Bing, Yahoo, Baidu, etc."
+Q4.6_3,"Please read and answer below questions. - I use social media. Example: Facebook, X (formerly Twitter), Reddit, Instagram."
+Q4.6_4,"Please read and answer below questions. - I have used AI-powered tools. Example: ChatGPT, Grammarly, Copilot, etc."
+Q7.4_First Click,Timing - First Click
+Q7.4_Last Click,Timing - Last Click
+Q7.4_Page Submit,Timing - Page Submit
+Q7.4_Click Count,Timing - Click Count
+Q8.5_NPS_GROUP,I am satisfied with the text format and layout of the Terms and Conditions agreement? - Group
+Q8.5,I am satisfied with the text format and layout of the Terms and Conditions agreement?
+Q8.6_NPS_GROUP,I am satisfied with the length of the Terms and Conditions agreement? - Group
+Q8.6,I am satisfied with the length of the Terms and Conditions agreement?
+Q8.7_NPS_GROUP,I am satisfied with the clarity and readability of the Terms and Conditions agreement? - Group
+Q8.7,I am satisfied with the clarity and readability of the Terms and Conditions agreement?
+Q8.8_NPS_GROUP,I am confident that I understood the Terms and Conditions agreement? - Group
+Q8.8,I am confident that I understood the Terms and Conditions agreement?
+Q8.10_First Click,Timing - First Click
+Q8.10_Last Click,Timing - Last Click
+Q8.10_Page Submit,Timing - Page Submit
+Q8.10_Click Count,Timing - Click Count
+Q9.2_1,To what extent do you agree with the following statement: - The platform will be accessible to users aged 13 and above.
+Q9.2_2,"To what extent do you agree with the following statement: - The platform can protect my personal data, including my identity and location."
+Q9.2_3,To what extent do you agree with the following statement: - The underlying machine learning model will generate fair and unbiased recommendations.
+Q9.2_4,To what extent do you agree with the following statement: - The platform may share my social media activities to my potential employer.
+Q9.2_5,To what extent do you agree with the following statement: - I am liable for the content I share if it is used for any harmful activities.
+Q9.2_6,To what extent do you agree with the following statement: - The platform will collect images stored in my device.
+Q9.2_7,"To what extent do you agree with the following statement: - The platform will not collect, share or sell my location information."
+Q9.3_NPS_GROUP,I am confident in my answers to the previous questions. - Group
+Q9.3,I am confident in my answers to the previous questions.
+Q9.5_First Click,Timing - First Click
+Q9.5_Last Click,Timing - Last Click
+Q9.5_Page Submit,Timing - Page Submit
+Q9.5_Click Count,Timing - Click Count
+Q10.4_NPS_GROUP,How mentally demanding was interpreting the text-only Terms and Conditions agreement? - Group
+Q10.4,How mentally demanding was interpreting the text-only Terms and Conditions agreement?
+Q10.5_NPS_GROUP,How physically demanding was the text-only Terms and Conditions agreement? - Group
+Q10.5,How physically demanding was the text-only Terms and Conditions agreement?
+Q10.6_NPS_GROUP,How hurried or rushed was the pace for interpreting the text-only Terms and Conditions agreement? - Group
+Q10.6,How hurried or rushed was the pace for interpreting the text-only Terms and Conditions agreement?
+Q10.7_NPS_GROUP,How successful were you in accomplishing what you were asked to do? - Group
+Q10.7,How successful were you in accomplishing what you were asked to do?
+Q10.8_NPS_GROUP,How hard did you have to work to accomplish your level of performance? - Group
+Q10.8,How hard did you have to work to accomplish your level of performance?
+Q10.9_NPS_GROUP,"How insecure, discouraged, irritated, stressed, and annoyed were you while reading the Terms and Conditions agreement? - Group"
+Q10.9,"How insecure, discouraged, irritated, stressed, and annoyed were you while reading the Terms and Conditions agreement?"
+Q10.11_First Click,Timing - First Click
+Q10.11_Last Click,Timing - Last Click
+Q10.11_Page Submit,Timing - Page Submit
+Q10.11_Click Count,Timing - Click Count
+Q11.2,Additional Comments
+Q14.16_First Click,Timing - First Click
+Q14.16_Last Click,Timing - Last Click
+Q14.16_Page Submit,Timing - Page Submit
+Q14.16_Click Count,Timing - Click Count
+Q17.4_First Click,Timing - First Click
+Q17.4_Last Click,Timing - Last Click
+Q17.4_Page Submit,Timing - Page Submit
+Q17.4_Click Count,Timing - Click Count
+Q18.5_NPS_GROUP,I am satisfied with the text format and layout of the Terms and Conditions agreement? - Group
+Q18.5,I am satisfied with the text format and layout of the Terms and Conditions agreement?
+Q18.6_NPS_GROUP,I am satisfied with the length of the Terms and Conditions agreement? - Group
+Q18.6,I am satisfied with the length of the Terms and Conditions agreement?
+Q18.7_NPS_GROUP,I am satisfied with the clarity and readability of the Terms and Conditions agreement? - Group
+Q18.7,I am satisfied with the clarity and readability of the Terms and Conditions agreement?
+Q18.8_NPS_GROUP,I am confident that I understood the Terms and Conditions agreement? - Group
+Q18.8,I am confident that I understood the Terms and Conditions agreement?
+Q18.10_First Click,Timing - First Click
+Q18.10_Last Click,Timing - Last Click
+Q18.10_Page Submit,Timing - Page Submit
+Q18.10_Click Count,Timing - Click Count
+Q19.2_1,To what extent do you agree with the following statement: - The platform will be accessible to users aged 13 and above.
+Q19.2_2,"To what extent do you agree with the following statement: - The platform can safeguard my personal data, including my identity and location."
+Q19.2_3,To what extent do you agree with the following statement: - The underlying machine learning model will generate fair and unbiased recommendations.
+Q19.2_4,To what extent do you agree with the following statement: - The platform may share my social media activities to my potential employer.
+Q19.2_5,To what extent do you agree with the following statement: - I am liable for the content I share if it is used for any harmful activities.
+Q19.2_6,To what extent do you agree with the following statement: - The platform will collect images stored in my device.
+Q19.2_7,"To what extent do you agree with the following statement: - The platform will not collect, share or sell my location information."
+Q19.3_NPS_GROUP,I am confident in my answers to the previous questions. - Group
+Q19.3,I am confident in my answers to the previous questions.
+Q19.5_First Click,Timing - First Click
+Q19.5_Last Click,Timing - Last Click
+Q19.5_Page Submit,Timing - Page Submit
+Q19.5_Click Count,Timing - Click Count
+Q20.4_NPS_GROUP,How mentally demanding was interpreting the visual Terms and Conditions? - Group
+Q20.4,How mentally demanding was interpreting the visual Terms and Conditions?
+Q20.5_NPS_GROUP,How physically demanding was the visual Terms and Conditions? - Group
+Q20.5,How physically demanding was the visual Terms and Conditions?
+Q20.6_NPS_GROUP,How hurried or rushed was the pace for interpreting the visual Terms and Conditions? - Group
+Q20.6,How hurried or rushed was the pace for interpreting the visual Terms and Conditions?
+Q20.7_NPS_GROUP,How successful were you in accomplishing what you were asked to do? - Group
+Q20.7,How successful were you in accomplishing what you were asked to do?
+Q20.8_NPS_GROUP,How hard did you have to work to accomplish your level of performance? - Group
+Q20.8,How hard did you have to work to accomplish your level of performance?
+Q20.9_NPS_GROUP,"How insecure, discouraged, irritated, stressed, and annoyed were you while reading the Terms and Conditions? - Group"
+Q20.9,"How insecure, discouraged, irritated, stressed, and annoyed were you while reading the Terms and Conditions?"
+Q20.11_First Click,Timing - First Click
+Q20.11_Last Click,Timing - Last Click
+Q20.11_Page Submit,Timing - Page Submit
+Q20.11_Click Count,Timing - Click Count
+Q21.2,Additional Comments
+Q23.2_NPS_GROUP,I am concerned with the platform's personal data collection and usage. - Group
+Q23.2,I am concerned with the platform's personal data collection and usage.
+Q23.3_NPS_GROUP,I am concerned with the platform's personal data processing practice. - Group
+Q23.3,I am concerned with the platform's personal data processing practice.
+Q23.4_NPS_GROUP,I am concerned about platform's personal data selling practice. - Group
+Q23.4,I am concerned about platform's personal data selling practice.
+Q23.5_NPS_GROUP,I am concerned about platform’s machine learning model's accuracy and generating fair recommendations. - Group
+Q23.5,I am concerned about platform’s machine learning model's accuracy and generating fair recommendations.
+Q23.7_1,Please rate the version that assisted you to understand Terms and Conditions better. - Text Only Terms and Conditions
+Q23.7_2,Please rate the version that assisted you to understand Terms and Conditions better. - Visual Terms and Conditions
+Q23.8,Additional Comments
+Q23.10_First Click,Timing - First Click
+Q23.10_Last Click,Timing - Last Click
+Q23.10_Page Submit,Timing - Page Submit
+Q23.10_Click Count,Timing - Click Count

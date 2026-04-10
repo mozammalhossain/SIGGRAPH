@@ -1,0 +1,4 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q8.5_NPS_GROUP,Q8.5,Q8.6_NPS_GROUP,Q8.6,Q8.7_NPS_GROUP,Q8.7,Q8.8_NPS_GROUP,Q8.8,Q8.10_First Click,Q8.10_Last Click,Q8.10_Page Submit,Q8.10_Click Count,Group
+2026-02-05 09:56:46,2026-02-05 10:23:39,0,100,1612,1,2026-02-05 10:23:40,R_1n8BqPB2aEMG3Wt,anonymous,EN,2.0,8.0,3.0,9.0,2.0,8.0,1.0,6.0,,,,,1.0
+2026-02-09 15:08:31,2026-02-09 15:23:35,0,100,903,1,2026-02-09 15:23:35,R_59wFBD3Ydf7UIAp,anonymous,EN,3.0,10.0,3.0,10.0,3.0,10.0,3.0,10.0,7.56,23.096,23.101,5.0,1.0
+2026-02-17 19:34:55,2026-02-17 19:51:51,0,100,1016,1,2026-02-17 19:51:51,R_34nLlVSAQDlKysK,anonymous,EN,2.0,7.0,2.0,7.0,1.0,5.0,1.0,5.0,4.061,14.195,14.201,6.0,1.0

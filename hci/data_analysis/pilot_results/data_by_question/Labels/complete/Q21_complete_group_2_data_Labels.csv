@@ -1,0 +1,11 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q21.2,Group
+2026-02-05 09:23:41,2026-02-05 09:26:52,0,100,191,1,2026-02-05 09:26:53,R_7vqEDiQtqGo9Gc9,anonymous,EN,No comments,2.0
+2026-02-05 13:57:44,2026-02-05 14:24:32,0,100,1607,1,2026-02-05 14:24:33,R_13Txw4jOhiM7F3K,anonymous,EN,,2.0
+2026-02-12 14:45:03,2026-02-12 15:16:19,0,100,1876,1,2026-02-12 15:16:20,R_7Lnj7SMJLY25N6P,anonymous,EN,"The design of the survey suffers from the following challenges when trying to emulate a ""real world"" context of signing up for a social media: 
+- The participant is completely primed about what to exactly expect, thereby decreasing chances of generating behaviours that may occur ""in the wild"". 
+- It is terribly difficult to assign absolute levels of emotion or ease to a task thereby making the responses to the survey less reliable. In other words, it would have been simpler to compare the relative ""ease"" or ""frustration"" or similar attributes between the modes of information dispersal. 
+
+Challenges on detail aspects: 
+- In the context of ""icon design"" or visual design in general there is a concept of a ""canonical form"", a symbolic representation more-or-less agreed upon by a demography (due to shared cultural artifacts and experiences). Therefore it is extremely challenging to ask a person to memorise visual metaphors if it has low semblance with already known symbols. Especially the choice of ""Unknown"" icon is directly clashes with the form of a ""Help"" icon. 
+
+- Flaticon artifacts have different kinds of licensing including and not limited to ""CC-BY-x"", please cite full sources as and when required. ",2.0

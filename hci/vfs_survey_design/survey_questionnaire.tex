@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt,doube]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}% provides \ocircle and \Box
+\usepackage[inline]{enumitem}
+\usepackage{color}% used for background color
+\usepackage{forloop}% used for \Qrating and \Qlines
+\usepackage{ifthen}% used for \Qitem and \QItem
+\usepackage{graphicx} % For including graphics.
+\usepackage{csquotes}
+\usepackage{scrlayer-scrpage}
+\usepackage{cancel}
+\usepackage{soul}
+\chead{}
+\cfoot{\pagemark}
+\usepackage{setspace}
+\doublespacing
+\setlength\parindent{0pt}
+\setlength\parskip{0.5\baselineskip}
+\usepackage{framed} % Include the framed package
+\usepackage{lipsum} % For dummy text
+\usepackage{standalone}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beginning of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% 2010, 2012 by Sven Hartenstein
+%% mail@svenhartenstein.de
+%% http://www.svenhartenstein.de
+%%
+%% Please be warned that this is NOT a full-featured framework for
+%% creating (all sorts of) questionnaires. Rather, it is a small
+%% collection of LaTeX commands that I found useful when creating a
+%% questionnaire. Feel free to copy and adjust any parts you like.
+%% Most probably, you will want to change the commands, so that they
+%% fit your taste.
+%%
+%% Also note that I am not a LaTeX expert! Things can very likely be
+%% done much more elegant than I was able to. If you have suggestions
+%% about what can be improved please send me an email. I intend to
+%% add good tipps to my website and to name contributers of course.
+%%
+%% 10/2012: Thanks to karathan for the suggestion to put \noindent
+%% before \rule!
+
+%% \Qq = Questionaire question. Oh, this is just too simple. It helps
+%% making it easy to globally change the appearance of questions.
+\newcommand{\Qq}[1]{\textbf{#1}}
+
+%% \QO = Circle or box to be ticked. Used both by direct call and by
+%% \Qrating and \Qlist.
+\newcommand{\QO}{$\Box$}% or: $\ocircle$
+\newcommand{\QC}{$\ocircle$}% or: $\ocircle$
+
+%% \Qrating = Automatically create a rating scale with NUM steps, like
+%% this: 0--0--0--0--0.
+\newcounter{qr}
+\newcommand{\Qrating}[1]{\QO\forloop{qr}{1}{\value{qr} < #1}{---\QO}}
+
+%% \Qline = Again, this is very simple. It helps setting the line
+%% thickness globally. Used both by direct call and by \Qlines.
+\newcommand{\Qline}[1]{\noindent\rule{#1}{0.6pt}}
+
+%% \Qlines = Insert NUM lines with width=\linewith. You can change the
+%% \vskip value to adjust the spacing.
+\newcounter{ql}
+\newcommand{\Qlines}[1]{\forloop{ql}{0}{\value{ql}<#1}{\vskip0em\Qline{\linewidth}}}
+
+%% \Qlist = This is an environment very similar to itemize but with
+%% \QO in front of each list item. Useful for classical multiple
+%% choice. Change leftmargin and topsep accourding to your taste.
+\newenvironment{Qlist}{%
+	\renewcommand{\labelitemi}{\QO}
+	\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+	}{%
+	\end{itemize}
+}
+\newenvironment{Qlist_SO}{% SO = Single Option
+	\renewcommand{\labelitemi}{\QC}
+	\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+	}{%
+	\end{itemize}
+}
+
+%% \Qtab = A "tabulator simulation". The first argument is the
+%% distance from the left margin. The second argument is content which
+%% is indented within the current row.
+\newlength{\qt}
+\newcommand{\Qtab}[2]{
+	\setlength{\qt}{\linewidth}
+	\addtolength{\qt}{-#1}
+	\hfill\parbox[t]{\qt}{\raggedright #2}
+}
+
+%% \Qitem = Item with automatic numbering. The first optional argument
+%% can be used to create sub-items like 2a, 2b, 2c, ... The item
+%% number is increased if the first argument is omitted or equals 'a'.
+%% You will have to adjust this if you prefer a different numbering
+%% scheme. Adjust topsep and leftmargin as needed.
+\newcounter{itemnummer}
+\newcommand{\Qitem}[2][]{% #1 optional, #2 notwendig
+	\ifthenelse{\equal{#1}{}}{\stepcounter{itemnummer}}{}
+	\ifthenelse{\equal{#1}{a}}{\stepcounter{itemnummer}}{}
+	\begin{enumerate}[topsep=2pt,leftmargin=2.8em]
+		\item[\textbf{\arabic{itemnummer}#1.}] #2
+	\end{enumerate}
+}
+
+%% \QItem = Like \Qitem but with alternating background color. This
+%% might be error prone as I hard-coded some lengths (-5.25pt and
+%% -3pt)! I do not yet understand why I need them.
+\definecolor{bgodd}{rgb}{0.8,0.8,0.8}
+\definecolor{bgeven}{rgb}{0.9,0.9,0.9}
+\newcounter{itemoddeven}
+\newlength{\gb}
+\newcommand{\QItem}[2][]{% #1 optional, #2 notwendig
+	\setlength{\gb}{\linewidth}
+	\addtolength{\gb}{-5.25pt}
+	\ifthenelse{\equal{\value{itemoddeven}}{0}}{%
+		\noindent\colorbox{bgeven}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+		\stepcounter{itemoddeven}%
+	}{%
+		\noindent\colorbox{bgodd}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+		\setcounter{itemoddeven}{0}%
+	}
+}
+
+\newcommand\boldred[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand\boldblue[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand\boldgreen[1]{\textcolor{green}{\textbf{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	We are creating an AI powered social media platform designed for North American university students and research industry partners. This platform will be completely free and accessible across multiple devices, including desktops, laptops, tablets, and smartphones. 
+	
+	The purpose of this social media platform is to foster social connections and content sharing among students and industry professionals. Users will also gain access to free courses, paid or unpaid mentorship opportunities, and research support. Additionally, the platform will provide up-to-date information on academic conferences. The platform is equipped with a machine leaning model. The model will recommend free courses, reading materials, and video tutorials tailored to your needs. 
+	
+	In this survey, you will review and interpret data security and use of machine learning model terms and conditions similar to those presented when signing up for popular social media platforms such as Facebook or Instagram. This study aims to examine whether the way these terms and conditions are presented affects users’ understanding of data use for machine learning development.
+	\section{Demography}
+	
+		\input{Demography}
+	
+	Please review the Terms \& Conditions for this social media platform before continuing to the next question.
+	
+	\begin{singlespace}
+		\begin{framed}
+			\input{fictitiousTOC}
+		\end{framed}
+	\end{singlespace}
+	
+	\section{Text Only ToC Questions}
+	
+		\input{TextToCBasicQuestion}
+	
+	\subsection{Text Only ToC YES}
+	
+		\input{TextToCAdvQuestion_Yes}
+	
+	\subsection{Text Only ToC NO}
+	
+		\input{TextToCAdvQuestion_No}
+	
+	Please review the information below before proceeding to the next section. The details provided will be required to continue with the remaining of this survey.
+	
+	\section{VFS}
+	
+		\input{SurveyDiagram}
+		
+		\input{VFSBasicQuestion}
+	
+	\subsection{VFS Yes}
+	
+		\input{VFSAdvQuestion_Yes}
+	
+	\subsection{VFS No}
+	
+		\input{VFSAdvQuestion_No}
+		
+	
+	\section{Feedback}
+	
+		\input{Feedback}
+	
+\end{document}

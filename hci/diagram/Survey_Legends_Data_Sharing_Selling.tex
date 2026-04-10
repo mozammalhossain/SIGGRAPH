@@ -1,0 +1,51 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%\graphicspath{{C:/MyFolder/Working_Papers/Working_Papers/facct_conf/}}
+%
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|C{18em}|c|C{18em}|}
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/thirdparty_modified}} & \specialcell{\\[-8pt] \textbf{Other Company} \vspace{2mm} \\ \\ \textbf{Example:} All Companies owned \\ by the Social Media Platform}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/policeman_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Law Enforcement Agency} \vspace{2mm} \\ \\ \textbf{Example:} RCMP, CBSA, CRA, \\ CSIS, Provincial Police}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/insurance-company_modified}} & \specialcell{\\[-8pt] \textbf{Insurance Company}  \vspace{2mm} \\ \\ \textbf{Example:} Companies Providing \\ Home or Car Insurance}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/job_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Employer} \vspace{2mm} \\ \\ \textbf{Example:} Any Current or \\ Potential Employer}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/affiliate_modified}} & \specialcell{\\[-8pt] \textbf{Anyone Who Wants to Buy} \vspace{2mm} \\ \\ \textbf{Example:} Marketing Agency, Tech. \\ Company, Advertisement Agency }
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/shopping-cart_modified}} & \specialcell{\\[-8pt] \textbf{Shopping} \vspace{2mm} \\ \\ \textbf{Example:} Present or Future \\Shopping Activities} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/sell_modified}} & \specialcell{\\[-8pt] \textbf{We Sell Data} \vspace{2mm} \\ \\ \textbf{Example:} Insurance Company, \\ Potential Employer}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/no-sale_modified}} & 
+		\specialcell{\\[-8pt] \textbf{We Do Not Sell } \vspace{2mm} \\ \textbf{Data to Anyone}\\ \\ \\ } \\ [0.5ex]
+		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+	
+\end{document}
+

@@ -1,0 +1,4 @@
+StartDate,EndDate,Status,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,DistributionChannel,UserLanguage,Q19.2_1,Q19.2_2,Q19.2_3,Q19.2_4,Q19.2_5,Q19.2_6,Q19.2_7,Q19.3_NPS_GROUP,Q19.3,Q19.5_First Click,Q19.5_Last Click,Q19.5_Page Submit,Q19.5_Click Count,Group
+2026-02-05 09:23:41,2026-02-05 09:26:52,0,100,191,1,2026-02-05 09:26:53,R_7vqEDiQtqGo9Gc9,anonymous,EN,2.0,1.0,3.0,2.0,1.0,2.0,1.0,1.0,6.0,,,,,2.0
+2026-02-05 13:57:44,2026-02-05 14:24:32,0,100,1607,1,2026-02-05 14:24:33,R_13Txw4jOhiM7F3K,anonymous,EN,3.0,3.0,2.0,3.0,3.0,3.0,3.0,3.0,10.0,3.621,33.543,33.546,9.0,2.0
+2026-02-12 14:45:03,2026-02-12 15:16:19,0,100,1876,1,2026-02-12 15:16:20,R_7Lnj7SMJLY25N6P,anonymous,EN,2.0,2.0,2.0,1.0,1.0,1.0,2.0,2.0,8.0,5.797,36.097,36.114,9.0,2.0

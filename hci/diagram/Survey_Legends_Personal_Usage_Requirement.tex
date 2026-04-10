@@ -1,0 +1,40 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%\graphicspath{{C:/MyFolder/Working_Papers/Working_Papers/facct_conf/}}
+%
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|C{18em}|c|C{18em}|}
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/13_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \\ \textbf{Example:} User Must be At Least \\ 13 Years of Age \\ }
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/16_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \\ \textbf{Example:} User Must be At Least \\ 16 Years of Age \\}\\ [0.75ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/18_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \\ \textbf{Example:} User Must be At Least \\ 18 Years of Age}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/accurate_modified}} & \specialcell{\\[-8pt] \textbf{Account Information} \vspace{2mm} \\ \\ \textbf{Example:} Account Information \\Must be Accurate} \\ [0.75ex]
+		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+	
+\end{document}
+

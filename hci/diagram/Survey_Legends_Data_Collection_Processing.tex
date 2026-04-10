@@ -1,0 +1,49 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%\graphicspath{{C:/MyFolder/Working_Papers/Working_Papers/facct_conf/}}
+%
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|C{18em}|c|C{18em}|}
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+%		%		======================================================================================
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/socialmedia_modified}} & \specialcell{\\[-8pt] \textbf{Social Media Information} \vspace{2mm} \\ \\ \textbf{Example:}, UserID, Friend List, \\ Shared Photo, Audio, Video File}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/personalinformation_modified}} & \specialcell{\\[-8pt] \textbf{Personal Information} \vspace{2mm} \\ \\ \textbf{Example:} Email Address, \\  Phone Number, Home Address} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/payment_modified}} & \specialcell{\\[-8pt] \textbf{Financial Information} \vspace{2mm} \\ \\ \textbf{Example:} Credit Card, Debit Card, \\ Bank Account, U-Card Info.}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/selfie_modified}} & \specialcell{\\[-8pt] \textbf{Multimedia Information} \vspace{2mm} \\ \\ \textbf{Example:} Stored Photo, \\ Audio, Video File} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/smartphone_modified}} & \specialcell{\\[-8pt] \textbf{Device Information} \vspace{2mm} \\ \\ \textbf{Example:} IMEI, Serial Number, \\ MAC Address, Device ID, OS Info.} 
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/location_modified}} & \specialcell{\\[-8pt] \textbf{Location Information} \vspace{2mm} \\ \\ \textbf{Example:} GPS, Wi-Fi, \\ IP addresses, Google Map Info.} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/httpcookie_modified}} & \specialcell{\\[-8pt] \textbf{Browser Cookie} \vspace{2mm} \\ \\ \textbf{Example:} Track and Save \\Information About User's Session}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/id_modified}} & \specialcell{\\[-8pt] \textbf{Government Issued ID} \vspace{2mm} \\ \\ \textbf{Example:} Passport,  Driver's \\License, Social Insurance Number} \\ [0.5ex]
+		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+	
+\end{document}
+

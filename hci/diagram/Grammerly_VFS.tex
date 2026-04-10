@@ -1,0 +1,74 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{multirow, multicol}
+
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multicolumn{3}{|c|}{\specialcell{\\[-8pt] Grammarly is an AI-powered tool that \\enhances writing by improving correctness, clarity, engagement, and delivery.}} \\ [0.5ex]
+		\hline
+		\specialcell{\textbf{\large {Category}}} & \textbf{\large {Action}} & \textbf{\large {Activity}} \\ [0.5ex]
+		\hline
+		\multirow{2}{*}{\rotatebox[origin=rc]{360}{\textbf{General}}} 
+		& \specialcell{You Must \\ be} & \specialcell{\\[-8pt] 
+			\includegraphics[width=12mm, valign=mc]{images/18} 
+		}\\[0.5ex]
+		\cline{2-3}
+		& \specialcell{You Must \\ Provide} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/accurate} }\\[0.5ex]
+		\cline{2-3}
+		\hline
+		\multirow{4}{*}{\rotatebox[origin=rc]{360}{\textbf{User Data}}} &
+		\specialcell{We Collect \\ Your Data} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/socialmedia} \hspace{0.2cm}
+			\includegraphics[width=12mm, valign=mc]{images/personalinformation} \hspace{0.2cm}
+			\includegraphics[width=12mm, valign=mc]{images/selfie} 
+			\includegraphics[width=12mm, valign=mc]{images/smartphone} 
+			\includegraphics[width=12mm, valign=mc]{images/httpcookie} 
+			\includegraphics[width=12mm, valign=mc]{images/location} 
+			\includegraphics[width=12mm, valign=mc]{images/payment} } \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{We Process \\ Data For} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/gear} 
+			\includegraphics[width=12mm, valign=mc]{images/research} 
+			\includegraphics[width=12mm, valign=mc]{images/improvement} 
+			\includegraphics[width=12mm, valign=mc]{images/newproduct} } \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{We Share \\ Data With}  & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/thirdparty} 
+			\includegraphics[width=12mm, valign=mc]{images/policeman} 
+			\includegraphics[width=12mm, valign=mc]{images/affiliate} 
+			\includegraphics[width=12mm, valign=mc]{images/bank} } \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{We Sell \\ Data To} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/job} 
+			\includegraphics[width=12mm, valign=mc]{images/insurance-company} 
+			\includegraphics[width=12mm, valign=mc]{images/policeman}} \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{Retention \\ Period} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/unknown} } \\ [0.5ex]
+		\hline
+		\multirow{4}{*}{\rotatebox[origin=rc]{360}{\textbf{Machine Learning}}} &
+		Accuracy & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/unknown} } \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{Fairness \\ and Bias} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/unknown} } \\ [0.5ex]
+		\cline{2-3} &
+		\specialcell{Potential \\ Risk} & \specialcell{\\[-8pt]
+			\includegraphics[width=12mm, valign=mc]{images/unknown} } \\ [0.5ex]
+		\hline
+		\multicolumn{3}{|c|}{\specialcell{\\[-8pt]\textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+
+\end{document}
+
