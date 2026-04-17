@@ -2,6 +2,8 @@ acmart.cls
 acmart.pdf
 acmguide.pdf
 samples/sample-*.pdf
+*.sta
+*.gz
 *.log
 *.aux
 *.cfg
@@ -32,3 +34,4 @@ samples/*.tex
 samples/*.bbx
 samples/*.cbx
 samples/*.dbx
+hci/hci.pdf
