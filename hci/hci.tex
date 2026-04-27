@@ -106,7 +106,7 @@
 
 \begin{abstract}
 
-  In this AI driven era models are largely trained with data collected either via web crawling or offering free or paid online services. Long, text heavy, and hard-to-understand terms and conditions (T\&C) which are the conventional mechanism to inform and receive user consent showing their weaknesses. Several research has concluded that most users do not read and understand T\&C. This is not only because of the complexity of the T\&C but also number of online service one must use to perform their daily activities and they have little or no time to review those. We argue that users have been adequately informed about this data gathering or collection process through T\&C. Therefore, we propose an alternative approrach that summarizes T\&C using visual aid that makes hidden practices visible at a glance, highlights unknowns where policies are unclear or missing, and emphasize user impact in plain text.
+  In this AI driven era models are largely trained with data collected either via web crawling or offering free or paid online services. Long, text heavy, and hard-to-understand terms and conditions (T\&C) which are the conventional mechanism to inform and receive user consent showing their weaknesses. Several research has concluded that most users do not read and understand T\&C. This is not only because of the complexity of the T\&C but also number of online service one must use to perform their daily activities and they have little or no time to review those. We argue that users have been adequately informed about this data gathering or collection process through T\&C. Therefore, we propose an alternative approrach that summarizes T\&C using visual aid that makes hidden practices visible at a glance, highlights unknowns where policies are unclear or missing, and emphasize user impact in plain text. In this paper we show how images can improve understanding over long text.
 
   % How many online application a person uses in a day?
 
@@ -185,17 +185,13 @@
 \section{Introduction}\label{intro}
 
 	Machine learning (ML) assisted software services have become increasingly integrated into daily life. Although ML has been a prominent research area for many years, it initially struggled to demonstrate its superiority in solving commercially viable problems, which led to slower adoption of ML technology. Limitations in ML algorithms, development tools, hardware resources, and the availability of training data further contributed to this slow commercial uptake. Over the past decade, ML has evolved dramatically and has become a core component of many automated services, e.g., answering citizen inquiries related to unemployment benefits, welfare programs, and other public services \cite{10.1093/ppmgov/gvaf013}. Extensive research efforts have resulted in the development of numerous ML strategies, techniques, and algorithms. With advancements in Deep Learning (DL), Natural Language Processing (NLP), and most recently, Large Language Models (LLMs), ML has proven its ability to tackle complex problems with commercial value \cite{li_impact_2023} \cite{pugliese_machine_2021}. As a result, leading corporations such as Microsoft, Google, IBM, Amazon, and others have begun investing heavily integrate ML into their products. Although Google and Amazon experimented with and incorporated ML techniques in their products in a limited scope as early as 2014, recent breakthroughs in DL and LLMs particularly in image recognition and language processing have accelerated their large scale commercial adoption to improve their search results and product recommendations. Other influential players, e.g., IBM, Meta, and many more have followed similar adoption paths. Today, it is difficult to find mid-sized or large companies offering products without incorporating some form of ML capability.
+	
+\subsection{Background}
 
 	ML assisted systems require large volumes of data for training. Both established and emerging companies interested in developing ML based services or applications have been collecting data, actively or passively, for extended periods. By offering free services such as search engines, social media, and e-commerce platforms, companies routinely collect user data. Loyalty programs are another mechanism used by retailers to gather consumer information. These data are often used for user profiling, personalized product recommendations, and targeted advertising. The process of data collection continues to accelerate. At present, approximately 19.8 billion Internet of Things (IoT) devices are connected to the internet, generating 2.5 quintillion bytes of data daily \cite{statistica_2} \cite{seedscientific}. This growth is projected to continue, with expectations that by 2034 40.6 billion IoT devices will be connected globally and will collectively produce 527.5 zettabytes of data annually \cite{statistica_1} \cite{statistica_2}.
-
+	
 	Prior to the introduction of the General Data Protection Regulation (GDPR) in 2016, organizations faced limited regulatory oversight regarding how data were collected and used \cite{GDPR2016a}. A similar lack of oversight also applied to ML model development until the emergence of formal AI governance policies. GDPR, introduced by the European Union (EU), enforces strict requirements related to data collection, processing, ownership, retention, and usage. These regulations present significant challenges for organizations involved in the development and deployment of ML based systems. Despite these regulatory advances, publicly available information about how ML models underlying AIS are built, trained, and evaluated remains limited. As a result, such systems are often criticized for a lack of transparency, commonly referred to as the “black box” problem, where the reasoning behind decisions or recommendations is unclear \cite{app15020672} \cite{10.2478} \cite{JSSv036i11}. While companies often rely on traditional, text based “Terms and Conditions” or “Terms of Use” agreements to disclose data collection and usage practices, these documents are widely regarded as ineffective at conveying meaningful information to users \cite{buttarelli_we_2019}. In this paper, we propose a documentation framework designed to better serve the needs of all stakeholders by improving transparency, interpretability, and informed user decision making.
-
-\section{Literature Review}\label{liturea_review}
-
-	We investigated existing contribution in three criteria. At the beginning, we wanted to understand complexity of the T\&C, whether they understand what was in those T\&C, and how users are reacting to those. Secondly, we investigated what efforts were made in the RAI domain to ensure its goals. Finally, we investigated the existing work of using image based documentation framework to assist user to understand complex, tex-heavy T\&C. Our findings of each criteria are discussed in next three sub-sections.
-
-\subsection{Complexity of T\&C}
-
+	
 	In today's ML driven era, especially with the rise of generative AI applications, users should be informed, or service providers should disclose, details about the underlying AI technology, data collection, processing, privacy practices, and data usage in a way that is easy to understand. Unfortunately, text-based legal agreements mentioned in Section \ref{intro} are the only approach currently used. A Deloitte survey in 2017 revealed that 91\% of 2,000 U.S. participants accepted "Terms and Conditions" or "Terms of Use" agreements without reading them. The same survey found that this trend was even stronger among individuals aged 18–38, with 97\% agreeing without reading \cite{cakebread_youre_2014}. Similarly, Obar et al. conducted a study using a fictitious social networking platform with two documents: a privacy policy (PP) and terms of service (TOS). They estimated that reading the PP and TOS would take 29–32 and 15–17 minutes, respectively, yet participants spent only 73 and 51 seconds before agreeing. Among 543 participants, mostly undergraduate students from a large communication class at a public university in the eastern U.S., 97\% agreed to the PP and 93\% to the TOS \cite{obar_biggest_2016}.
 
 	For English-speaking adults, the average oral reading rate is 183 words per minute (wpm), and the silent reading rate can be up to 280-320 wpm \cite{obar_biggest_2016}\cite{brysbaert_how_2019}. Table \ref{tab:lincenseLength} shows the word count of license agreements for some of the most popular and widely used applications or services. It is surprising to observe that some of the most popular free service providers, i.e., Meta, Tinder, Microsoft, etc., crafted their license agreements in such a way that, for a regular user, it could take 14.4 to 63.5 minutes to read them. Table \ref{tab:lincenseLength} results were based on 2020 data. We assume that most users did not spend much time reviewing and understanding their rights, responsibilities, data collection, and possible usage before agreeing to the terms. Our assumption is based on the survey findings conducted by Obar et al., where participants agreed to share their data with the United States national security agency and their employer, and provided their first-born child as payment for social networking service access \cite{obar_biggest_2016}. From the above discussion, we conclude that traditional, text-heavy, lengthy legal agreements between service providers and users are inadequate in delivering appropriate messages to their audience. We advocate for a clear, easily understandable communication mechanism or framework for AI system users, explaining their rights and responsibilities.
@@ -208,10 +204,12 @@
 	\end{table}
 
 \subsection{Literacy Level}
-
 	OECD
 	The SMOG Formula
 
+\section{Literature Review}\label{liturea_review}
+
+	We investigated existing contribution in three criteria. At the beginning, we wanted to understand complexity of the T\&C, whether they understand what was in those T\&C, and how users are reacting to those. Secondly, we investigated what efforts were made in the RAI domain to ensure its goals. Finally, we investigated the existing work of using image based documentation framework to assist user to understand complex, tex-heavy T\&C. Our findings of each criteria are discussed in next three sub-sections.
 \subsection{RAI Initiative}
 
 	A Fact Sheet is defined as "a single-page or other brief document presenting facts relevant to a specific issue" \cite{oxford_university_press_fact_nodate}. In ML development, a \enquote{Fact Sheet}, also referred to as \enquote{FactSheets} (FS), is a documentation framework designed to support responsible AI (RAI) practices \cite{arnold_factsheets_2018}. We consider it the cornerstone of all governance tools. Originally introduced by Arnold et al., the FS framework aims to promote transparency and trustworthiness in ML services and applications for auditors and developers. This trust is achieved by documenting every stage of the ML development lifecycle \cite{arnold_factsheets_2018}. Acting as a repository for outputs from RAI tools such as bias detection and mitigation, explainability, robustness, performance, etc., the FS extends traditional software documentation with a strict focus on AI development. Hind et al. noted that the FS proposed by Arnold et al. can serve multiple purposes for different stakeholders \cite{hind_experiences_2020}, though we believe end users were overlooked in their design. Other initiatives include Michell et al.'s "Model Cards", which emphasize reporting performance, use cases, and fairness, and Gebru et al.'s "Datasheets for Datasets", a comprehensive data-focused document answering 57 questions on data collection, processing, and usage \cite{mitchell_model_2019} \cite{gebru_datasheets_2021}. Both Arnold et al. and Hind et al. adopted a question-and-answer methodology targeting developers, data scientists, technical stakeholders, and testers but excluded end users \cite{arnold_factsheets_2018} \cite{hind_experiences_2020}. Similarly, Kasia et al.'s CLeAR framework supports AI practitioners and policymakers \cite{chmielinski2024the}, yet fails to address end users' needs. In summary, FSs are vital throughout an ML project, from development to deployment and beyond. We conclude that researchers' contributions, discussed above, offer a robust approach for personnel engaged in ML development.
@@ -219,7 +217,7 @@
 \subsection{Use of Image}
 
 	Zhang et al. introduced privacy nutrition labels for mobile applications offering a limited subset of information, their approach is not fully applicable to ML assisted software \cite{298912}. Our proposed VFS builds upon and partially resembles Zhang et al.'s contribution but is specifically tailored for ML assisted software.
-
+	
 \subsection{Discussion}
 	Currently, there is no standardized framework for documenting key aspects of ML models, i.e., how training data is collected and processed or how model performance is evaluated. FS, \enquote{Model Cards}, \enquote{Datasheets for Datasets}, and \enquote{CLeAR} initiatives represent significant steps toward achieving RAI objectives. However, these efforts have largely overlooked the importance of involving end users. Moreover, they lack a unified template for capturing all relevant ML details. While Arnold et al. proposed a project-specific FS template, we argue that this should become a universal standard \cite{arnold_factsheets_2018}. Similarly, Hind et al. and Arnold et al. anticipated that FS would serve multiple user groups but failed to classify these groups or provide clear guidelines on which ML details should be included for different FS types \cite{arnold_factsheets_2018} \cite{hind_experiences_2020}.
 
@@ -241,21 +239,98 @@
 		\label{fig:designscienceframework}
 	\end{figure}
 
-\subsection{Participant Enrollment}
-	We have taken several methods to recruit participants. Our primary strategy was to take advantage of UNB media communication, campus wide physical poster and email, use of social media. We also make initiatives through presentation in an classroom and research exposition setting. Participants were not compensated either Monetary or any other form of compensation. Since the was anonymous in nature, we were unable to identify their country of origin.
-
-	Although we identified several user groups, this paper concentrates exclusively on the End User group. This choice reflects our intent to prioritize the ML data producer rather than the data consumer. The remaining user groups we identified exhibit a high degree of specialization, and recruitment from these groups would require more time compared to end users, as Khalid and Brown showed that domain-specific participant recruitment often encounters challenges such as locating eligible individuals, communication delays, establishing appropriate screening criteria, and addressing trust-related concerns \cite{10714565}.
-
 \subsection{VFS Design}
 	While designing our VFS template, we followed a risk-based approach. For ML development, there are mainly two types of risks: data-level and model-level risks. Data risk encapsulates data bias, shift, adversarial attack, etc., while model-level risk includes accuracy, uncertainty, etc. \cite{ZHANG2022113800}. Instead of treating them separately, we followed a hybrid approach, combining the ML model's data bias and fairness risk into one, accuracy solely for the model, and leaving a wide range for any other risk the provider may consider informing its users of. We propose the below components in a VFS that we consider most important for end-users: \enquote{Purpose}, \enquote{Data Collection}, \enquote{Data Processing}, \enquote{Data Sharing}, \enquote{Data Selling}, \enquote{Data Retention}, \enquote{Accuracy, Fairness}, and \enquote{Potential Risk}.
+\subsection{Survey Design}
+
+The survey consists of seven sections. The first section, Informed Consent, provides participants with essential information about the purpose and context of the study.
+
+\begin{enumerate}
+	\item Demography
+	\item Data Collection
+	\item Data Processing
+	\item Data Retention
+	\item Data Share
+	\item Accuracy, Fairness, and Bias
+	\item Potential Risk
+\end{enumerate}
+
+\subsubsection{Demography }
+A VFS must start with the purpose of the AIS service. This should provide an example problem and how the AIS service is solving it.
+
+\subsubsection{Data Collection }
+An AIS user must know what type of data the AIS provider will be collecting (if any) while using it. The AIS provider may or may not provide an example informing the user what type of data will be collected. It is highly recommended that the AIS provider will provide an example. The minimum requirement of this step can be an acknowledgment from the AIS provider in the form of a \enquote{Yes} or \enquote{No}.
+
+%	\begin{figure}[!h]
+	%		\centering
+	%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_02.pdf}
+	%		\caption{Survey Legends (Data Collection)}
+	%		\label{fig:Survey_Legends_02}
+	%	\end{figure}
+
+\subsubsection{Data Processing }
+If the AIS provider acknowledges that they collect user data, the provider must inform users why they collect it and how user data will be processed for future use. The provider must also inform users how they make sure collected data is free from PII. The minimum requirement of this step can be an acknowledgment from the AIS provider as a form of a \enquote{Yes} or \enquote{No}.
+
+\subsubsection{Data Retention }
+If the AIS provider collects and processes user data, the provider must inform users of their data retention policy. They must also inform users how they destroy user data once the retention period is over.
+
+\subsubsection{Data Share}
+AIS providers often share collected data with their affiliates, government organizations, e.g., law enforcement agencies, and third party AIS providers. They also share and transfer ownership of collected data in the occurrence of business transfer. It is necessary for the provider to inform users with whom they intend to share collected data and in what form, i.e., unprocessed or processed.
+
+\subsubsection{Accuracy, Fairness, and Bias }
+Regardless of free or paid services, it is mandatory for the AIS provider to show evidence about the effectiveness and usefulness of the service they are offering. For AIS underlying ML models' accuracy is a widely accepted metric for such \cite{blagec_critical_2020}. Since there is a concern about unfair and biased recommendations or decisions, it is the provider's responsibility to inform its users of the level of fair and unbiased recommendations or decisions of their service. The minimum requirement of this step can be a percentile of accuracy, fairness, and biasness.
+
+\subsubsection{Potential Risk }
+AISs are not free from potential risk. There is a growing concern about adversarial attacks on the underlying ML models along with training data poisoning, stealing, and model hijacking. The AIS provider must acknowledge if there is any potential risk for using the service and how the provider minimizes or eliminates those potential risks.
 
 \subsection{Image Selection }
 	While appropriate images can transfer information at lightning speed, increasing the completeness and readability of documents, inappropriate ones may result in poor results, especially in e-commerce, where icon or image selection affects click-through rate \cite{Hyun2022} \cite{10.1145/3543873.3584646}. Although in this work, we are not going to design any images for our proposed VFS, we will instead use the most commonly used, publicly available images. We need to select images carefully with the intention of avoiding misinterpretation. We aligned our image selection strategy with the image design standards discussed by Collaud et al. These are \enquote{access to meaning, familiarity, visual complexity, and aesthetic appeal} \cite{COLLAUD2022102290}.
+	
+\subsection{VFS Legends}\label{vfsLegeds}
+\enquote{A picture is worth a thousand words} \cite{sullivan_picture_2017}. Visual representations of complex agreements not only clarify the content but can also improve decision making for non-technical users \cite{suters_emergence_2023, kim_impact_2021}. Although many companies rely on visual materials to simplify product instructions, it is uncommon to apply the same approach when verifying a user’s understanding of software license agreements, even though visual formats may enhance information quality, credibility, and decision making \cite{kim_impact_2021}. This research anticipated that a VFS will serve as an effective method for conveying license related information in a pictorial form. Although this research introduced four types of VFS users with definitions, it concentrated only on the end-user type. All images used in this research for preparing the VFS were publicly available in generic form and downloaded from Flaticon.com.
 
-\subsection{Ethical Considerations}
-	To evaluate our Visual FactSheet (VFS) hypothesis that visual representations can improve transparency around data collection when using free software services such as social media, we developed an end user focused online survey distributed through multiple channels, including social media. The survey, titled \enquote{Towards a Visual FactSheet for Software Terms and Conditions Agreements}, received approval from the University of New Brunswick (UNB) Faculty of Computer Science and the UNB Research Ethics Board (REB), under file number \textbf{REB 2026‑030}. The survey aims to engage participants not only from the UNB community (students, faculty, and staff) but also from external audiences, including our industry partner, TrojAI. A subsequent modification request was submitted to the UNB REB to include a physical poster to support participant recruitment, which was also approved.
+Data is the foundational resource for any ML model. The model’s behavior is directly shaped by the training data, which ultimately affects the quality of the recommendations.  Hence, it is essential for users to understand the data they share and how these data will be stored, processed, and distributed. Figure \ref{fig:Survey_Legends_01} presents a set of images to convey the demographic information for the proposed VFS.
 
-	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. The project also measures participants’ subjective workload using the NASA Task Load Index (NASA TLX)\cite{hart1988development}.
+\begin{figure}[!h]
+	\centering
+	\caption{Demography Images for VFS }
+	\label{fig:Survey_Legends_01}
+	%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_01.pdf}
+	\scalebox{0.72}[0.72] {\input{vfs_diagram/sourcefile/Survey_Legends_Personal_Usage_Requirement.tex}}
+\end{figure}
+%	It is widely believed that increasing the amount of training data leads to improved model accuracy \cite{Gates:2014:DNC:2683467.2683477}.
+In a similar fashion, Figure \ref{fig:Survey_Legends_02} presents images in which user data can be collected while using an AIS. Figure \ref{fig:Survey_Legends_03} shows the images that the proposed VFS utilized to inform users about data sharing or distribution approaches by the AIS service providers.
+
+\begin{figure}[!h]
+	\centering
+	\caption{Data Collection Images for VFS}
+	\label{fig:Survey_Legends_02}
+	%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_02.pdf}
+	\scalebox{0.72}[0.72] {\input{vfs_diagram/sourcefile/Survey_Legends_Data_Collection_Processing.tex}}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\caption{Data Processing Images for VFS}
+	\label{fig:Survey_Legends_03}
+	%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_03.pdf}
+	\scalebox{0.72}[0.72] {\input{vfs_diagram/sourcefile/Survey_Legends_Data_Sharing_Selling.tex}}
+\end{figure}
+%	Regardless of an AIS is free or otherwise,
+AIS, either a free or paid service, providers must demonstrate the effectiveness and value of their offerings. For AIS solutions, the accuracy of the underlying machine learning models is a critical metric. Given the ongoing concerns about bias and fairness of ML assisted services, providers should inform users about the impartiality of their services, including the reported accuracy, fairness, and bias percentiles. Finally, AIS services may carry inherent risks to the users. Growing concerns include adversarial attacks on machine learning models, as well as threats, i.e., data poisoning, model theft, and hijacking. Service providers must recognize these vulnerabilities and outline the measures implemented to mitigate or prevent them. The images presented in Figure \ref{fig:Survey_Legends_04} depict how the proposed VFS attempts to show these concerns pictorially to an AIS user.
+
+\begin{figure}[!h]
+	\centering
+	\caption{Machine Learning Images for VFS}
+	\label{fig:Survey_Legends_04}
+	%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_04.pdf}
+	\scalebox{0.72}[0.72] {\input{vfs_diagram/sourcefile/Survey_Legends_Data_Machine_Learning.tex}}
+\end{figure}
+
+\subsection{Participant Enrollment}
+We have taken several methods to recruit participants. Our primary strategy was to take advantage of UNB media communication, campus wide physical poster and email, use of social media. We also make initiatives through presentation in an classroom and research exposition setting. Participants were not compensated either Monetary or any other form of compensation. Since the was anonymous in nature, we were unable to identify their country of origin.
+
+Although we identified several user groups, this paper concentrates exclusively on the End User group. This choice reflects our intent to prioritize the ML data producer rather than the data consumer. The remaining user groups we identified exhibit a high degree of specialization, and recruitment from these groups would require more time compared to end users, as Khalid and Brown showed that domain-specific participant recruitment often encounters challenges such as locating eligible individuals, communication delays, establishing appropriate screening criteria, and addressing trust-related concerns \cite{10714565}.
 
 \section{Components of Visual FactSheet}\label{ComponentsVFS}
 
@@ -269,11 +344,13 @@
 
 	Regardless of whether the service is free or paid, AIS providers must demonstrate the effectiveness and value of their offerings. For AIS solutions, the accuracy of underlying machine learning models is a critical metric. Given ongoing concerns about bias and fairness, providers should inform users about the impartiality of their services, including reported accuracy, fairness, and bias percentiles. Finally, AIS services may carry inherent risks. Growing concerns include adversarial attacks on machine learning models, as well as threats such as data poisoning, model theft, and hijacking. Service providers must recognize these vulnerabilities and clearly outline the measures implemented to mitigate or prevent them.
 
-\subsection{VFS Example}\label{example}
+\subsection{VFS Case Studies}\label{example}
 
-	We illustrate VFS with two case studies: a free service (ChatGPT) and a paid service (Equifax), as they are among the most widely used AI platforms. We use the VFS framework to visually analyze the data these services collect, process, sell, and share. Additionally to assess the transparency of their machine learning models which is the core of their functionality.
+	This research prepared two VFS using two case studies: a free ML assisted service, i.e., ChatGPT and a paid one, i.e., Equifax. Using the VFS framework, this research visually examined the types of data these services collect, process, sell, and share, as well as their transparency regarding ML models, which are core components of their functionality.
 
-	ChatGPT, developed by OpenAI and launched in November 2022, is a chatbot built on LLM architecture to enable natural language processing and human-like conversations for task assistance and information retrieval \cite{ortiz_what_nodate}. In our study, we reviewed its \enquote{Privacy Policy} and created the VFS shown in Figure \ref{fig:ChatGPT}, with explanatory legends for the icons in Figure \ref{fig:VSLegends}. Figure \ref{fig:ChatGPT} illustrates the categories of data collected by OpenAI during user interactions with ChatGPT, including personal details, social media information, device identifiers, and communication content. Realtime analytics are applied to these data to enhance user experience. Figure \ref{fig:ChatGPT} also depicts how OpenAI processes, shares, and retains user data indefinitely. These data are utilized for research, product development, and service improvement, and may be shared with government agencies, third-party vendors, and affiliated entities \cite{openai_privacy_2023}. Despite ChatGPT’s foundation in LLM technology, no public documentation exists regarding its architecture, accuracy, associated risks, or fairness and bias in the training data.
+	ChatGPT, developed by OpenAI and released in November 2022, is a chatbot built on a large language model (LLM) architecture that enables natural language processing and human-like interactions for information retrieval and task support \cite{ortiz_what_nodate}. In this research, we analyzed OpenAI's \enquote{Privacy Policy} and produced the VFS shown in Figure \ref{fig:ChatGPT} using the images presented in Section \ref{vfsLegeds}. 
+	
+	The figure illustrates the categories of data collected by OpenAI during user interactions with ChatGPT, including personal details, social media information, device identifiers, and communication content. These data are processed using real-time analytics to improve user experience. The VFS further shows that OpenAI processes, shares, and retains user data indefinitely for purposes such as research, product development, and service improvement, and may share this information with government agencies, third-party vendors, and affiliated entities \cite{openai_privacy_2023}. Despite ChatGPT’s foundation in LLM technology, no public documentation is available describing its architecture, accuracy, associated risks, or potential fairness and bias concerns regarding its training data.
 
 	\begin{figure}[!t]
 		\begin{minipage}{0.48\textwidth}
@@ -289,29 +366,22 @@
 		\end{minipage}
 	\end{figure}
 
-%	\begin{figure}[h!]
-%		\centering
-%		\input{diagram/ChatGPT_VFS.tex}
-%		\caption{Visual FactSheet for ChatGPT }
-%		\label{fig:ChatGPT}
-%	\end{figure}
-%		\begin{figure}[!t!]
-%		\centering
-%		\scalebox{1}[0.90]{\input{diagram/Equifax_VFS.tex}}
-%		\caption{Visual FactSheet for Equifax }
-%		\Description{Visual FactSheet for Equifax}
-%		\label{fig:Equifax}
-%	\end{figure}
-%	[scale=0.7]
-	Equifax, one of the largest consumer reporting agency, is a global leader in data, analytics, and technology solutions, primarily functioning as a credit reporting agency. The company gathers consumer information, analyzes it to produce credit scores and detailed reports, and sells these reports to third parties \cite{house_Representatives}. Our review presented in Appendix \ref{appendix:a} Figure \ref{fig:Equifax} revealed that Equifax’s data collection strategy is similar to that of ChatGPT, but significantly broader. For instance, Equifax collects government issued identification details such as passports, Social Security numbers, and taxpayer identification numbers. Beyond this, it also captures device information used to access its services and monitors online activities, including search history, purchasing behavior, and employment history \cite{equifax}. Surprisingly, Equifax process personal data without explicit consent from users and offer no option to \enquote{opt out} \cite{house_Representatives}. This practice is reflected in their \enquote{Privacy Statement} as well which states they do not respond to browser based \enquote{do not track} requests \cite{equifax}. We were also surprised to find no reference to the use of AI or machine learning in Equifax’s \enquote{Terms of Use} or \enquote{Privacy Statement}. Yet, the company openly acknowledges employing advanced ML models to uncover deep patterns and enhance predictiveness of its credit assessments \cite{equifaxAI}. As a result, we were unable to provide details about their ML architecture, its accuracy, potential risks, or issues related to fairness and bias in the training data.
-
+	Equifax, one of the largest consumer reporting agencies, is a global leader in data analytics and technology solutions and primarily operates as a credit reporting organization. The company collects extensive consumer information, analyzes it to generate credit scores and detailed reports, and provides these reports to third-party clients \cite{house_Representatives}. As shown in Figure \ref{fig:Equifax}, our review indicates that Equifax’s data collection practices resemble those of ChatGPT, although they are considerably more extensive. For example, Equifax gathers government issued identification data such as passports, Social Security numbers, and taxpayer identification numbers. It also collects device level information and monitors online behavior, including search history, purchasing patterns, and employment information \cite{equifax}. Notably, Equifax processes personal data without obtaining explicit user consent and provides no option for users to \enquote{opt out} \cite{house_Representatives}. This approach is further reflected in its \enquote{Privacy Statement}, which specifies that the company does not respond to browser based \enquote{Do Not Track} requests \cite{equifax}.
+	
+	Furthermore, despite its substantial data driven operations, neither Equifax’s \enquote{Terms of Use} nor its \enquote{Privacy Statement} mentions the use of ML. However, the company publicly acknowledges the deployment of advanced ML models to detect complex patterns and improve the predictive accuracy of its credit assessment tools \cite{equifaxAI}. Consequently, we were unable to examine the details of their ML architecture, performance, associated risks, or potential issues related to fairness and bias in the underlying training datasets.
+	
+\subsection{Ethical Considerations}
+	To evaluate our Visual FactSheet (VFS) hypothesis that visual representations can improve transparency around data collection when using free software services such as social media, we developed an end user focused online survey distributed through multiple channels, including social media. The survey, titled \enquote{Towards a Visual FactSheet for Software Terms and Conditions Agreements}, received approval from the University of New Brunswick (UNB) Faculty of Computer Science and the UNB Research Ethics Board (REB), under file number \textbf{REB 2026‑030}. The survey aims to engage participants not only from the UNB community (students, faculty, and staff) but also from external audiences, including our industry partner, TrojAI. A subsequent modification request was submitted to the UNB REB to include a physical poster to support participant recruitment, which was also approved.
+	
+	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. The project also measures participants’ subjective workload using the NASA Task Load Index (NASA TLX)\cite{hart1988development}.
+	
 \section{User Survey}
 
 	Making decisions with little or no information often leaves individuals feeling powerless and frustrated. This lack of clarity can lead to trust issues, particularly when sharing personal data without full control over its use. To address this, our proposed VFS aims to present the \enquote{Terms and Conditions} of a fictitious social media platform in a visual format, enabling users to make informed choices about whether to engage with the platform. The user survey was designed as an online multiple choice questionnaire, following guidelines outlined by Arlene Fink \cite{alma991013701999705153}. To conduct the survey, we created a fictitious social media platform along with corresponding \enquote{Terms and Conditions}. Our fictitious agreement is very similar to ChatGPT but not as extensive as Equifax. Using our VFS framework, we developed an end user focused presentation (Figure \ref{fig:VFS_Survey}). An open invitation (Appendix \ref{appendix:c}) was extended to students from a research university and employees of a selected information technology company to participate voluntarily. The survey consisted of three sections. In the first section, participants reviewed the fictitious “Terms and Conditions” in the traditional text based format and answered questions (Appendix \ref{appendix:b}) to assess their understanding. They were then asked whether they would use the platform. In the second section, the same “Terms and Conditions” were presented using the VFS framework (Figure \ref{fig:VFS_Survey}), supplemented by visual descriptions (Figure \ref{fig:VSLegends} and \ref{fig:surveyLegendsML}). Participants were again asked about their willingness to use the platform. Finally, we gathered feedback on their observations and the effectiveness of the VFS framework. The survey findings are presented in Section \ref{surveyResult}.
 
 	\begin{figure}[!t]
 		\begin{minipage}{0.48\textwidth}
-			\includegraphics[page=1, scale=0.4]{images/pilotsurvey/SurveyQuestion_main.pdf}
+			\includegraphics[page=2, scale=0.4]{images/pilotsurvey/SurveyQuestionDiagram_new.drawio.pdf}
 			\caption{Survey Flow}
 			\label{fig:SuveryFlow}
 		\end{minipage}
@@ -322,111 +392,6 @@
 			\label{fig:VFS_Survey}
 		\end{minipage}
 	\end{figure}
-
-%	\begin{figure}[H]
-%		\centering
-%		\scalebox{0.85}[0.85] {\includegraphics[page=1, width=\linewidth]{images/pilotsurvey/SurveyQuestion_main.pdf}}
-%		\caption{Survey Flow}
-%		\label{fig:SuveryFlow}
-%	\end{figure}
-
-%	\begin{figure}[h!]
-%		\centering
-%		\scalebox{1}[0.90]{\input{diagram/Survey_VFS.tex}}
-%		\caption{Visual FactSheet for Social Media Platform}
-%		\label{fig:VFS_Survey}
-%	\end{figure}
-
-\subsection{Survey Design}
-
-	The survey consists of seven sections. The first section, Informed Consent, provides participants with essential information about the purpose and context of the study.
-
-	\begin{enumerate}
-		\item Demography
-		\item Data Collection
-		\item Data Processing
-		\item Data Retention
-		\item Data Share
-		\item Accuracy, Fairness, and Bias
-		\item Potential Risk
-	\end{enumerate}
-
-	\subsubsection{Demography }
-	A VFS must start with the purpose of the AIS service. This should provide an example problem and how the AIS service is solving it.
-
-	\begin{figure}[!t]
-		\begin{minipage}{0.48\textwidth}
-			\includegraphics[page=1, scale=0.4]{diagram/Survey_Legends_01.pdf}
-			\caption{Survey Legends (Demography)}
-			\label{fig:Survey_Legends_01}
-		\end{minipage}
-		\hfill % Adds spacing between the two
-		\begin{minipage}{0.48\textwidth}
-			\includegraphics[page=1, scale=0.4]{diagram/Survey_Legends_02.pdf}
-			\caption{Survey Legends (Data Collection)}
-			\label{fig:Survey_Legends_02}
-		\end{minipage}
-	\end{figure}
-
-%	\begin{figure}[!h]
-%		\centering
-%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_01.pdf}
-%		\caption{Survey Legends (Demography)}
-%		\label{fig:Survey_Legends_01}
-%	\end{figure}
-
-	\subsubsection{Data Collection }
-	An AIS user must know what type of data the AIS provider will be collecting (if any) while using it. The AIS provider may or may not provide an example informing the user what type of data will be collected. It is highly recommended that the AIS provider will provide an example. The minimum requirement of this step can be an acknowledgment from the AIS provider in the form of a \enquote{Yes} or \enquote{No}.
-
-%	\begin{figure}[!h]
-%		\centering
-%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_02.pdf}
-%		\caption{Survey Legends (Data Collection)}
-%		\label{fig:Survey_Legends_02}
-%	\end{figure}
-
-	\subsubsection{Data Processing }
-	If the AIS provider acknowledges that they collect user data, the provider must inform users why they collect it and how user data will be processed for future use. The provider must also inform users how they make sure collected data is free from PII. The minimum requirement of this step can be an acknowledgment from the AIS provider as a form of a \enquote{Yes} or \enquote{No}.
-
-	\begin{figure}[!t]
-		\begin{minipage}{0.48\textwidth}
-			\includegraphics[page=1, scale=0.4]{diagram/Survey_Legends_03.pdf}
-			\caption{Survey Legends (Data Processing)}
-			\label{fig:Survey_Legends_03}
-		\end{minipage}
-		\hfill % Adds spacing between the two
-		\begin{minipage}{0.48\textwidth}
-			\includegraphics[page=1, scale=0.4]{diagram/Survey_Legends_04.pdf}
-			\caption{Survey Legends (Machine Learning)}
-			\label{fig:Survey_Legends_04}
-		\end{minipage}
-	\end{figure}
-
-%	\begin{figure}[!h]
-%		\centering
-%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_03.pdf}
-%		\caption{Survey Legends (Data Processing)}
-%		\label{fig:Survey_Legends_03}
-%	\end{figure}
-
-	\subsubsection{Data Retention }
-	If the AIS provider collects and processes user data, the provider must inform users of their data retention policy. They must also inform users how they destroy user data once the retention period is over.
-
-	\subsubsection{Data Share}
-	AIS providers often share collected data with their affiliates, government organizations, e.g., law enforcement agencies, and third party AIS providers. They also share and transfer ownership of collected data in the occurrence of business transfer. It is necessary for the provider to inform users with whom they intend to share collected data and in what form, i.e., unprocessed or processed.
-
-	\subsubsection{Accuracy, Fairness, and Bias }
-	Regardless of free or paid services, it is mandatory for the AIS provider to show evidence about the effectiveness and usefulness of the service they are offering. For AIS underlying ML models' accuracy is a widely accepted metric for such \cite{blagec_critical_2020}. Since there is a concern about unfair and biased recommendations or decisions, it is the provider's responsibility to inform its users of the level of fair and unbiased recommendations or decisions of their service. The minimum requirement of this step can be a percentile of accuracy, fairness, and biasness.
-
-%	\begin{figure}[!h]
-%		\centering
-%		\includegraphics[page=1, width=\linewidth]{diagram/Survey_Legends_04.pdf}
-%		\caption{Survey Legends (Machine Learning)}
-%		\label{fig:Survey_Legends_04}
-%	\end{figure}
-
-	\subsubsection{Potential Risk }
-	AISs are not free from potential risk. There is a growing concern about adversarial attacks on the underlying ML models along with training data poisoning, stealing, and model hijacking. The AIS provider must acknowledge if there is any potential risk for using the service and how the provider minimizes or eliminates those potential risks.
 
 	The demographic section of the survey collects information about participants’ educational background, gender, and age. These data are essential for analyzing the survey results. In the following section, participants are presented with a short story introducing a new social media website. They are then instructed to review two different versions of the platform’s terms and conditions and respond to related questions
 
@@ -521,7 +486,7 @@
 
 
 %https://www.heinz.cmu.edu/~acquisti/papers/Acquisti_Toggles_DollarSigns_Triangles_Convey_Privacy_Icons_LinkTexts.pdf
-\section{Conclusion and Limitation}
+\section{Limitations and Future Work}
 
 	In this paper, we defined four types of FS by identifying and categorizing distinct user groups and introduce a methodology for developing a VFS for ML services. Our proposed FS definitions aim to reduce ambiguity for FS creators and generators. We further believe that the VFS will empower an increasing number of ML service consumers by safeguarding their rights and enabling informed decisions when using publicly available free ML services. Although we present four FS types with corresponding definitions, our primary focus is on the end-user category. All icons used in the VFS design are generic, publicly available, and sourced from Flaticon.com. We see potential for standardizing these icons and plan to conduct a survey experiment to evaluate the strengths and weaknesses of the proposed VFS, continuing our efforts toward icon standardization.
 
