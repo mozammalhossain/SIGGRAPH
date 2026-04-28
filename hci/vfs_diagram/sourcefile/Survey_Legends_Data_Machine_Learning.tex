@@ -1,0 +1,48 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+%\usepackage{graphicx}
+%\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+%\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+%\usepackage{array}
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%\graphicspath{{C:/MyFolder/Conferences/FactSheetImage/}}
+\graphicspath{{chapter4/}}
+%
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|C{18em}|c|C{18em}|}
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/gear_modified}} &
+		\specialcell{\\[-8pt] \textbf{Machine Learning Model} \vspace{2mm} \\ \\ \textbf{Example:} Training New and \\Existing Machine Learning Model}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/wrong_modified}} & \specialcell{\\[-8pt] \textbf{Bad Accuracy} \vspace{2mm} \\ \\ \textbf{Example:} Current Accuracy \\Rate is 53\%} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/discrimination_modified}} & \specialcell{\\[-8pt] \textbf{Biased Recommendation} \vspace{2mm} \\ \\ \textbf{Example:} Prefers Users \\ of a Particular Country}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/risk_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Highly Risky} \vspace{2mm} \\ \\ \textbf{Example:} The Model has \\ 
+			Security Vulnerabilities} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/retention_modified}} & \specialcell{\\[-8pt] \textbf{Data Retention Period} \vspace{2mm} \\ \\ \textbf{Example:} Data can be \\ Retain Indefinitely}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/unknown_modified}} & \specialcell{\\[-8pt] \textbf{Information Unknown} \vspace{2mm} \\ \\ \textbf{Example:} Information is \\  Unknown or Unavailable} \\ [0.5ex]
+		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+	
+\end{document}
+

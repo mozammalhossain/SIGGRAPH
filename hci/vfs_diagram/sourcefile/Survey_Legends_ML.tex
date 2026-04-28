@@ -1,0 +1,88 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|c|c|c|} 
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Images}}} & \textbf{{\large Description}} & \textbf{{\large Images}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/gear}} &
+		\specialcell{\\[-8pt] \textbf{Machine Learning Model} \\ Example: Training New or \\ Re-Training Existing Model}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/wrong}} & \specialcell{\\[-8pt] \textbf{Bad Accuracy} \\ Example: Current Accuracy \\Rate is 53\%} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/discrimination}} & \specialcell{\\[-8pt] \textbf{Biased Recommendation} \\ Example: Prefers Users \\ of a Particular Country}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/risk}} & 
+		\specialcell{\\[-8pt] \textbf{Highly Risky} \\ Example: The Model has \\ 
+			Security Vulnerabilities} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/retention}} & \specialcell{\\[-8pt] \textbf{Data Retention Period} \\ Example: Data can be, \\ Retain Indefinitely}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/unknown}} & \specialcell{\\[-8pt] \textbf{Information Unknown} \\ Example: Information is, \\  Unknown or Unavailable} \\ [0.5ex]
+		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/payment}} & \specialcell{\\[-8pt] \textbf{Financial Information}\\ Example: Credit Card, Debit Card, \\ Bank Account, U-Card Info.}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/selfie}} & \specialcell{\\[-8pt] \textbf{Multimedia Information} \\ Example: Stored Photo, \\ Audio, and Video File} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/smartphone}} & \specialcell{\\[-8pt] \textbf{Device Information} \\ Example: IMEI, Serial Number, \\ MAC Address, Device ID, OS Info.} 
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/location}} & \specialcell{\\[-8pt] \textbf{Location Information} \\ Example: GPS, Wi-Fi, \\ IP addresses, Google Map Info.} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/gear}} &
+%		\specialcell{\\[-8pt] \textbf{Machine Learning Model} \\ Example: Training New or \\ Re-Training Existing Model}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/product-development}} & \specialcell{\\[-8pt] \textbf{New Product Development} \\ Example: Developing New \\ Service or App}\\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/thirdparty}} & \specialcell{\\[-8pt] \textbf{Other Company} \\ Example: All Companies owned \\ by the Social Media Platform}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/policeman}} & 
+%		\specialcell{\\[-8pt] \textbf{Law Enforcement Agency} \\ Example: RCMP, \\ CBSA, CRA}\\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/insurance-company}} & \specialcell{\\[-8pt] \textbf{Insurance Company} \\ Example: Companies Providing \\ Home or Car Insurance}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/job}} & 
+%		\specialcell{\\[-8pt] \textbf{Employer} \\ Example: Any Current or \\ Potential Employer}\\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/affiliate}} & \specialcell{\\[-8pt] \textbf{Anyone Who Wants to Buy} \\ Example: Marketing Agency, Tech. \\ Company Advertisement Agency }
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/wrong}} & \specialcell{\\[-8pt] \textbf{Bad Accuracy} \\ Example: Current Accuracy \\Rate is 53\%} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/discrimination}} & \specialcell{\\[-8pt] \textbf{Biased Recommendation} \\ Example: Prefers Users \\ of a Particular Country}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/risk}} & 
+%		\specialcell{\\[-8pt] \textbf{Highly Risky} \\ Example: the Model has \\ 
+%			Security Vulnerabilities} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/httpcookie}} & \specialcell{\\[-8pt] \textbf{Browser Cookie} \\ Example: Prefers Users \\ of a Particular Country}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/research}} & 
+%		\specialcell{\\[-8pt] \textbf{Research} \\ Example: the Model has \\ 
+%			Security Vulnerabilities} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/id}} & \specialcell{\\[-8pt] \textbf{Government Issued ID} \\ Example: Prefers Users \\ of a Particular Country}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/monitoring}} & 
+%		\specialcell{\\[-8pt] \textbf{Monitor} \\ Example: the Model has \\ 
+%			Security Vulnerabilities} \\ [0.5ex]
+%		\hline
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/sell}} & \specialcell{\\[-8pt] \textbf{Government Issued ID} \\ Example: Prefers Users \\ of a Particular Country}
+%		&
+%		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/no-sale}} & 
+%		\specialcell{\\[-8pt] \textbf{Monitor} \\ Example: the Model has \\ 
+%			Security Vulnerabilities} \\ [0.5ex]
+%		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+
+\end{document}
+

@@ -1,0 +1,43 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\graphicspath{{C:/MyFolder/Conferences/FactSheetImage/}}
+%
+%\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|C{18em}|c|C{18em}|}
+		\hline
+		\specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/research_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Research} \vspace{2mm} \\ \\ \textbf{Example:} Gain Insight \\ for Future Product}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/monitoring_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Monitor} \vspace{2mm} \\ \\ \textbf{Example:} Monitor People’s \\Activities on Service Usage} \\ [0.5ex]
+		\hline
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/improvement_modified}} &
+		\specialcell{\\[-8pt] \textbf{Product Improvement} \vspace{2mm} \\ \\ \textbf{Example:} Improve Product's  \\ Performance}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=20mm, valign=mc]{images/product-development_modified}} & \specialcell{\\[-8pt] \textbf{New Product Development} \vspace{2mm} \\ \\ \textbf{Example:} Developing New \\ Service or App}\\ [0.5ex]
+		\hline
+		\multicolumn{4}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+	
+\end{document}
+

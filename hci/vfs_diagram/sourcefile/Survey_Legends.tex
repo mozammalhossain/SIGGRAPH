@@ -1,0 +1,108 @@
+%pdflatex VFS.tex
+%pdftoppm -png VFS.pdf output
+
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+%\usepackage{tabularray}
+%
+\usepackage{multirow, makecell}
+%\usepackage{tabularx,array,booktabs}
+%
+%\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+%
+\graphicspath{{C:/MyFolder/Working_Papers/Working_Papers/facct_conf/}}
+%
+\newcommand{\specialcell}[2][b]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\begin{document}
+	
+	\begin{tabular}{|c|c|C{16em}|c|C{16em}|} 
+		\hline
+		\textbf{Category} & \specialcell{\\[-8pt] \textbf{{\large Image}}} & \textbf{{\large Description}} & \textbf{{\large Image}} & \textbf{{\large Description}}\\ [0.5ex]
+		\hline
+%		======================================================================================
+		\multirow{2}{*}{\rotatebox[origin=rc]{360}{\textbf{\specialcell{Platform \\ Usage \\ Requirement}}}} & \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/13_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \textbf{Example:} User Must be At Least \\ 13 Years of Age}
+		&\textbf{}
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/16_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \textbf{Example:} User Must be At Least \\ 16 Years of Age}\\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/18_modified}} & \specialcell{\\[-8pt]\textbf{Users Age} \vspace{2mm} \\ \textbf{Example:} User Must be At Least \\ 18 Years of Age}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/accurate_modified}} & \specialcell{\\[-8pt] \textbf{Account Information} \vspace{2mm} \\ \textbf{Example:} Account Information \\Must be Accurate} \\ [0.5ex]
+		\hline
+%		======================================================================================
+		\multirow{4}{*}{\rotatebox[origin=rc]{360}{\textbf{\specialcell{Data Collection \\ and \\Processing}}}} & \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/socialmedia_modified}} & \specialcell{\\[-8pt] \textbf{Social Media Information} \vspace{2mm} \\ \textbf{Example:}, UserID, Friend List, \\ Shared Photo, Audio and Video File}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/personalinformation_modified}} & \specialcell{\\[-8pt] \textbf{Personal Information} \vspace{2mm} \\ \textbf{Example:} Email Address, \\  Phone Number, Home Address} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/payment_modified}} & \specialcell{\\[-8pt] \textbf{Financial Information} \vspace{2mm} \\ \textbf{Example:} Credit Card, Debit Card, \\ Bank Account, U-Card Info.}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/selfie_modified}} & \specialcell{\\[-8pt] \textbf{Multimedia Information} \vspace{2mm} \\ \textbf{Example:} Stored Photo, \\ Audio, and Video File} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/smartphone_modified}} & \specialcell{\\[-8pt] \textbf{Device Information} \vspace{2mm} \\ \textbf{Example:} IMEI, Serial Number, \\ MAC Address, Device ID, OS Info.} 
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/location_modified}} & \specialcell{\\[-8pt] \textbf{Location Information} \vspace{2mm} \\ \textbf{Example:} GPS, Wi-Fi, \\ IP addresses, Google Map Info.} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/httpcookie_modified}} & \specialcell{\\[-8pt] \textbf{Browser Cookie} \vspace{2mm} \\ \textbf{Example:} Track and Save \\Information About User's Session}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/id_modified}} & \specialcell{\\[-8pt] \textbf{Government Issued ID} \vspace{2mm} \\ \textbf{Example:} Passport,  Driver's \\License, Social Insurance Number} \\ [0.5ex]
+		\hline
+%		======================================================================================
+		\multirow{4}{*}{\rotatebox[origin=rc]{360}{\textbf{\specialcell{Data Sharing \\and \\Selling}}}} & \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/thirdparty_modified}} & \specialcell{\\[-8pt] \textbf{Other Company} \vspace{2mm} \\ \textbf{Example:} All Companies owned \\ by the Social Media Platform}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/policeman_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Law Enforcement Agency} \vspace{2mm} \\ \textbf{Example:} RCMP, CBSA, CRA, \\ CSIS, Provincial Police}\\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/insurance-company_modified}} & \specialcell{\\[-8pt] \textbf{Insurance Company}  \vspace{2mm} \\ \textbf{Example:} Companies Providing \\ Home or Car Insurance}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/job_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Employer} \vspace{2mm} \\ \textbf{Example:} Any Current or \\ Potential Employer}\\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/affiliate_modified}} & \specialcell{\\[-8pt] \textbf{Anyone Who Wants to Buy} \vspace{2mm} \\ \textbf{Example:} Marketing Agency, Tech. \\ Company Advertisement Agency }
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/shopping-cart_modified}} & \specialcell{\\[-8pt] \textbf{Shopping} \vspace{2mm} \\ \textbf{Example:} Present or Future \\Shopping Activities} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/sell_modified}} & \specialcell{\\[-8pt] \textbf{We Sell Data} \vspace{2mm} \\ \textbf{Example:} Insurance Company, \\ Potential Employer}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/no-sale_modified}} & 
+		\specialcell{\\[-8pt] \textbf{We Do Not Sell } \vspace{2mm} \\ \textbf{Data to Anyone}} \\ [0.5ex]
+		\hline
+%%		======================================================================================
+		\multirow{2}{*}{\rotatebox[origin=rc]{360}{\textbf{\specialcell{Machine \\ Learning}}}} &
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/gear_modified}} &
+		\specialcell{\\[-8pt] \textbf{Machine Learning Model} \vspace{2mm} \\ \textbf{Example:} Training New and \\Existing Machine Learning Model}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/wrong_modified}} & \specialcell{\\[-8pt] \textbf{Bad Accuracy} \vspace{2mm} \\ \textbf{Example:} Current Accuracy \\Rate is 53\%} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/discrimination_modified}} & \specialcell{\\[-8pt] \textbf{Biased Recommendation} \vspace{2mm} \\ \textbf{Example:} Prefers Users \\ of a Particular Country}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/risk_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Highly Risky} \vspace{2mm} \\ \textbf{Example:} The Model has \\ 
+			Security Vulnerabilities} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/retention_modified}} & \specialcell{\\[-8pt] \textbf{Data Retention Period} \vspace{2mm} \\ \textbf{Example:} Data can be, \\ Retain Indefinitely}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/unknown_modified}} & \specialcell{\\[-8pt] \textbf{Information Unknown} \vspace{2mm} \\ \textbf{Example:} Information is, \\  Unknown or Unavailable} \\ [0.5ex]
+		\hline
+%%		======================================================================================
+		\multirow{2}{*}{\rotatebox[origin=rc]{360}{\textbf{\specialcell{Research \\and \\Monitoring}}}} & \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/research_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Research} \vspace{2mm} \\ \textbf{Example:} Gain Insight \\ for Future Product}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/monitoring_modified}} & 
+		\specialcell{\\[-8pt] \textbf{Monitor} \vspace{2mm} \\ \textbf{Example:} Monitor People’s \\Activities on Service Usage} \\ [0.5ex]
+		\cline{2-5}
+		& \specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/improvement_modified}} &
+		\specialcell{\\[-8pt] \textbf{Product Improvement} \vspace{2mm} \\ \textbf{Example:} Improve Product's  \\ Performance}
+		&
+		\specialcell{\\[-8pt] \includegraphics[width=12mm, valign=mc]{images/product-development_modified}} & \specialcell{\\[-8pt] \textbf{New Product Development} \vspace{2mm} \\ \textbf{Example:} Developing New \\ Service or App}\\ [0.5ex]
+%		======================================================================================
+		\hline
+		\multicolumn{5}{|c|}{\specialcell{\\[-8pt] \textbf{Source:} All images were downloaded from Flaticon.com}} \\ [0.5ex]
+		\hline
+	\end{tabular}
+
+\end{document}
+
