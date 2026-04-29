@@ -191,6 +191,8 @@
 	Prior to the introduction of the General Data Protection Regulation (GDPR) in 2016, organizations faced limited regulatory oversight regarding how data were collected and used \cite{GDPR2016a}. A similar lack of oversight also applied to ML model development until the emergence of formal AI governance policies. GDPR, introduced by the European Union (EU), enforces strict requirements related to data collection, processing, ownership, retention, and usage. These regulations present significant challenges for organizations involved in the development and deployment of ML based systems. Despite these regulatory advances, publicly available information about how ML models underlying AIS are built, trained, and evaluated remains limited. As a result, such systems are often criticized for a lack of transparency, commonly referred to as the “black box” problem, where the reasoning behind decisions or recommendations is unclear \cite{app15020672} \cite{10.2478} \cite{JSSv036i11}. While companies often rely on traditional, text based \enquote{Terms and Conditions} (T\&C) agreements to disclose data collection and usage practices, these documents are widely regarded as ineffective at conveying meaningful information to users \cite{buttarelli_we_2019}. In this paper, we propose a documentation framework designed to better serve the needs of all stakeholders by improving transparency, interpretability, and informed user decision making.
 	
 \subsection{Background}
+	"In a global landscape increasingly shaped by technology, artificial intelligence (AI) is emerging as a disruptive force, redefining not only our daily lives but also the very essence of governance. \cite{Filgueiras_2026}"
+	
 	In today's ML driven era, especially with the rise of generative AI applications, users should be informed, or service providers should disclose, details about the underlying AI technology, data collection, processing, privacy practices, and data usage in a way that is easy to understand. Unfortunately, text-based T\&C is the only approach currently used. A Deloitte survey in 2017 revealed that 91\% of 2,000 U.S. participants accepted T\&C or \enquote{Terms of Use} agreements without reading them. The same survey found that this trend was even stronger among individuals aged 18–38, with 97\% agreeing without reading \cite{cakebread_youre_2014}. Similarly, Obar et al. conducted a study using a fictitious social networking platform with two documents: a privacy policy (PP) and terms of service (TOS). They estimated that reading the PP and TOS would take 29–32 and 15–17 minutes, respectively, yet participants spent only 73 and 51 seconds before agreeing. Among 543 participants, mostly undergraduate students from a large communication class at a public university in the eastern U.S., 97\% agreed to the PP and 93\% to the TOS \cite{obar_biggest_2016}.
 
 	For English-speaking adults, the average oral reading rate is 183 words per minute (wpm), and the silent reading rate can be up to 280-320 wpm \cite{obar_biggest_2016}\cite{brysbaert_how_2019}. Table \ref{tab:lincenseLength} shows the word count of license agreements for some of the most popular and widely used applications or services. It is surprising to observe that some of the most popular free service providers, i.e., Meta, Tinder, Microsoft, etc., crafted their license agreements in such a way that, for a regular user, it could take 14.4 to 63.5 minutes to read them. Table \ref{tab:lincenseLength} results were based on 2020 data. We assume that most users did not spend much time reviewing and understanding their rights, responsibilities, data collection, and possible usage before agreeing to the terms. Our assumption is based on the survey findings conducted by Obar et al., where participants agreed to share their data with the United States national security agency and their employer, and provided their first-born child as payment for social networking service access \cite{obar_biggest_2016}. From the above discussion, we conclude that traditional, text-heavy, lengthy legal agreements between service providers and users are inadequate in delivering appropriate messages to their audience. We advocate for a clear, easily understandable communication mechanism or framework for AI system users, explaining their rights and responsibilities.
@@ -205,6 +207,12 @@
 \subsection{Literacy Level}
 	OECD
 	The SMOG Formula
+		"According to the OECD, fully one-third of working-age Americans possess even limited digital skills. One in six are unable to use email, web search, or other basic online tools. \cite{ezell2021assessing}"
+		
+		"The development of IoT technologies and social network services (SNS) are contributing
+		to the growth of big data. However, the vast amount of data makes it difficult for users to
+		find the information they need, and as a result, the demand for a system that provides the
+		desired information in a well-organized form is increasing. \cite{Hyun2022}"
 
 \section{Literature Review}\label{liturea_review}
 
@@ -224,6 +232,10 @@
 \subsection{Use of Image}
 
 	Zhang et al. introduced privacy nutrition labels for mobile applications offering a limited subset of information, their approach is not fully applicable to ML assisted software \cite{298912}. Our proposed VFS builds upon and partially resembles Zhang et al.'s contribution but is specifically tailored for ML assisted software.
+	
+	"The main findings of Experiment 1 are that viewers	can detect and retain information about named targets that they have never seen before at an RSVP duration 	as short as 13 ms, and that they can do so even when they have no information about the target until after presentation. \cite{Potter2014}"
+	
+	"These findings have practical implications for icon design. When creating new icons for time critical user interfaces, icons should be kept as simple as possible and employ familiar, commonly used, graphics. \cite{doi:10.1177/2041669518780807}"
 
 \subsection{RAI Initiative}
 
@@ -239,6 +251,10 @@
 
 \section{Proposed Work}
 
+	"Trustworthy Artificial Intelligence (AI) is based on seven technical requirements sustained over three main
+	pillars that should be met throughout the system’s entire life cycle: it should be (1) lawful, (2) ethical, and (3)
+	robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2023.101896}"
+	
 	Governance in AI is an evolving discipline that includes key principles such as fairness, bias mitigation, explainability, robustness, causal inference, and privacy. Understanding the system's capabilities and limitations is essential for AIS users. A FS aims to provide users with all necessary information to make informed decisions. While FS is widely acknowledged as an important tool advancing RAI when implemented correctly, the term is often ambiguous, overused, and misunderstood. To ensure clarity and effectiveness, FS must have a well-defined, comprehensive, and actionable structure aligned with RAI principles. Traditionally, an FS may take the form of a lengthy, text-heavy document detailing relevant attributes across multiple sections. However, we argue that a single, exhaustive FS meets the needs of all audiences. Hence, we propose FS be tailored for distinct user groups instead of a long generic FS. We presented our work on FS user identification in Section \ref{userGroup.}.
 
 	At the age of interactive information systems, digital icons or pictorial signs play an important role in conveying information quickly in contrast to the use of text. Universally accepted icons can also break written language and cultural barriers, and convey large amounts of information efficiently and concisely \cite{COLLAUD2022102290} \cite{doi:10.1177/2041669518780807} \cite{doi:10.1177/2041669518780807}. In addition, the human brain can process and retain information more quickly when presented visually. Potter et al. conducted an experiment in 2014 that revealed humans can process an entire image in 13 milliseconds, even if they have not seen the image before \cite{Potter2014-ih}. Based on the information presented in Sections \ref{intro} and \ref{liturea_review}, and the discussion above, we propose utilizing visual aids, i.e., images in FS for conveying necessary information to end users prior to using any AIS. Our hypothesis is that our proposed VFS will eliminate or reduce constraints that a text-heavy FS brings. To examine our hypothesis, we prepared VFS for two popular AIS using their Terms and Conditions that are presented in Section \ref{example} Figure \ref{fig:ChatGPT} and in Appendix \ref{appendix:a} Figure \ref{fig:Equifax}. In order to evaluate our proposed hypothesis, we conducted a user survey involving xx participants and presented our findings in Section \ref{surveyResult}.
@@ -372,27 +388,8 @@ AISs are not free from potential risk. There is a growing concern about adversar
 	
 	This exploratory study found that users do not trust ChatGPT as much as Google and Wikipedia."
 	
-	"The development of IoT technologies and social network services (SNS) are contributing
-	to the growth of big data. However, the vast amount of data makes it difficult for users to
-	find the information they need, and as a result, the demand for a system that provides the
-	desired information in a well-organized form is increasing. \cite{Hyun2022}"
-	
-	"According to the OECD, fully one-third of working-age Americans possess even limited digital skills. One in six are unable to use email, web search, or other basic online tools. \cite{ezell2021assessing}"
-	
 	"Out of all the people in the U.S. who use ChatGPT,	77\% use it as a search engine. [Adobe, How ChatGPT is changing the	way we search]"
 	
-	"Trustworthy Artificial Intelligence (AI) is based on seven technical requirements sustained over three main
-	pillars that should be met throughout the system’s entire life cycle: it should be (1) lawful, (2) ethical, and (3)
-	robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2023.101896}"
-	
-
-	
-	"The main findings of Experiment 1 are that viewers	can detect and retain information about named targets that they have never seen before at an RSVP duration 	as short as 13 ms, and that they can do so even when they have no information about the target until after presentation. \cite{Potter2014}"
-	
-	"These findings have practical implications for icon design. When creating new icons for time critical user interfaces, icons should be kept as simple as possible and employ familiar, commonly used, graphics. \cite{doi:10.1177/2041669518780807}"
-	
-	"In a global landscape increasingly shaped by technology, artificial intelligence (AI) is emerging as a disruptive force, redefining not only our daily lives but also the very essence of governance. \cite{Filgueiras_2026}"
-
 \section{Components of Visual FactSheet}\label{ComponentsVFS}
 
 	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}. Visual depictions of complex agreements not only provide clarity of the content but also can enhance a nontechnical person's decision-making process \cite{suters_emergence_2023, kim_impact_2021}. While the use of visual depictions over text-heavy content makes it easier to understand product instructions for many companies, it is uncommon to use the same strategy for capturing a user's response of proper understanding of the license agreement, despite their possible effectiveness for improving information quality, credibility, and enhancing the decision-making process \cite{kim_impact_2021}. We expect a VFS will be a useful approach to inform license information pictorially.
