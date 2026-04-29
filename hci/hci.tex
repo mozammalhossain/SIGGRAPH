@@ -230,6 +230,9 @@
 	A Fact Sheet is defined as "a single-page or other brief document presenting facts relevant to a specific issue" \cite{oxford_university_press_fact_nodate}. In ML development, a \enquote{Fact Sheet}, also referred to as \enquote{FactSheets} (FS), is a documentation framework designed to support responsible AI (RAI) practices \cite{arnold_factsheets_2018}. We consider it the cornerstone of all governance tools. Originally introduced by Arnold et al., the FS framework aims to promote transparency and trustworthiness in ML services and applications for auditors and developers. This trust is achieved by documenting every stage of the ML development lifecycle \cite{arnold_factsheets_2018}. Acting as a repository for outputs from RAI tools such as bias detection and mitigation, explainability, robustness, performance, etc., the FS extends traditional software documentation with a strict focus on AI development. Hind et al. noted that the FS proposed by Arnold et al. can serve multiple purposes for different stakeholders \cite{hind_experiences_2020}, though we believe end users were overlooked in their design. Other initiatives include Michell et al.'s "Model Cards", which emphasize reporting performance, use cases, and fairness, and Gebru et al.'s "Datasheets for Datasets", a comprehensive data-focused document answering 57 questions on data collection, processing, and usage \cite{mitchell_model_2019} \cite{gebru_datasheets_2021}. Both Arnold et al. and Hind et al. adopted a question-and-answer methodology targeting developers, data scientists, technical stakeholders, and testers but excluded end users \cite{arnold_factsheets_2018} \cite{hind_experiences_2020}. Similarly, Kasia et al.'s CLeAR framework supports AI practitioners and policymakers \cite{chmielinski2024the}, yet fails to address end users' needs. In summary, FSs are vital throughout an ML project, from development to deployment and beyond. We conclude that researchers' contributions, discussed above, offer a robust approach for personnel engaged in ML development.
 	
 \subsection{Discussion}
+	"Currently, no standard or widely accepted best practices exist	for model licensing. But does this lack of standardization lead to undesired consequences? \cite{10.5555/3780338.3783609} To foster a more standardized future	for model licensing, we also propose a new draft of model licenses, ModelGo Licenses (MGLs),
+	to address these challenges and promote better compliance."
+	
 	Currently, there is no standardized framework for documenting key aspects of ML models, i.e., how training data is collected and processed or how model performance is evaluated. FS, \enquote{Model Cards}, \enquote{Datasheets for Datasets}, and \enquote{CLeAR} initiatives represent significant steps toward achieving RAI objectives. However, these efforts have largely overlooked the importance of involving end users. Moreover, they lack a unified template for capturing all relevant ML details. While Arnold et al. proposed a project-specific FS template, we argue that this should become a universal standard \cite{arnold_factsheets_2018}. Similarly, Hind et al. and Arnold et al. anticipated that FS would serve multiple user groups but failed to classify these groups or provide clear guidelines on which ML details should be included for different FS types \cite{arnold_factsheets_2018} \cite{hind_experiences_2020}.
 
 	In this paper, we propose a visual documentation framework, i.e., \enquote{Visual FactSheet} (VFS), designed for non-technical users.
@@ -270,12 +273,6 @@
 \subsection{Demography }
 	A VFS must start with the purpose of the AIS service. This should provide an example problem and how the AIS service is solving it.
 	
-	\begin{table}[!h]
-		\centering
-		\caption{Demography}
-		\label{tab:demography}
-		\input{table/Demographics_Live.tex}
-	\end{table}
 
 \subsection{Data Collection }
 An AIS user must know what type of data the AIS provider will be collecting (if any) while using it. The AIS provider may or may not provide an example informing the user what type of data will be collected. It is highly recommended that the AIS provider will provide an example. The minimum requirement of this step can be an acknowledgment from the AIS provider in the form of a \enquote{Yes} or \enquote{No}.
@@ -356,12 +353,22 @@ AISs are not free from potential risk. There is a growing concern about adversar
 	\end{figure}
 
 \subsection{Participant Enrollment}
-	We have taken several methods to recruit participants. Our primary strategy was to take advantage of UNB media communication, campus wide physical poster and email, use of social media. We also make initiatives through presentation in an classroom and research exposition setting. Participants were not compensated either Monetary or any other form of compensation. Since the was anonymous in nature, we were unable to identify their country of origin.
+
+	"Participant recruitment is a critical component of humancentric computing (HCC) research, directly influencing the validity and generalizability of study findings \cite{10714565}"
+	
+	We have taken several methods to recruit participants. We advertise our survey through UNB media communication, campus wide physical poster, email, use of social media (e.g., Instagram and Facebook), and authors’ personal networks. We also make initiatives through presentation in an classroom and research exposition setting. Participants were not compensated either Monetary or any other form of compensation. Since the survey was anonymous in nature, we were unable to identify their geographic location. "The participant pool was diverse in terms of age, gender, and education (see Table \ref{tab:demography}) \cite{10.1145/3613905.3650862}."
+	
+	\begin{table}[!h]
+		\centering
+		\caption{Demography}
+		\label{tab:demography}
+		\input{table/Demographics_Live.tex}
+	\end{table}
 
 	Although we identified several user groups, this paper concentrates exclusively on the End User group. This choice reflects our intent to prioritize the ML data producer rather than the data consumer. The remaining user groups we identified exhibit a high degree of specialization, and recruitment from these groups would require more time compared to end users, as Khalid and Brown showed that domain-specific participant recruitment often encounters challenges such as locating eligible individuals, communication delays, establishing appropriate screening criteria, and addressing trust-related concerns \cite{10714565}.
 	
-	"We conducted fve focus groups and one interview with a total of 14 participants from September to November 2023 via Zoom. \cite{10.1145/3613905.3650862} Participants were recruited via Amazon MTurk, a university email list, social media (e.g., Instagram and Facebook), and authors’ personal networks. The participant pool was diverse in terms of age, gender, education, and occupation (see table 1).
-	The focus groups were centered around fve major probes: A majority of participants (93\%) answered that they frst turn to Google Search Engine
+	"We conducted five focus groups and one interview with a total of 14 participants from September to November 2023 via Zoom. \cite{10.1145/3613905.3650862} Participants were recruited via Amazon MTurk, a university email list, social media (e.g., Instagram and Facebook), and authors’ personal networks. The participant pool was diverse in terms of age, gender, education, and occupation (see table 1).
+	The focus groups were centered around five major probes: A majority of participants (93\%) answered that they frst turn to Google Search Engine
 	
 	This exploratory study found that users do not trust ChatGPT as much as Google and Wikipedia."
 	
@@ -378,16 +385,13 @@ AISs are not free from potential risk. There is a growing concern about adversar
 	pillars that should be met throughout the system’s entire life cycle: it should be (1) lawful, (2) ethical, and (3)
 	robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2023.101896}"
 	
-	"Currently, no standard or widely accepted best practices exist	for model licensing. But does this lack of standardization lead to undesired consequences? \cite{10.5555/3780338.3783609} To foster a more standardized future	for model licensing, we also propose a new draft of model licenses, ModelGo Licenses (MGLs),
-	to address these challenges and promote better compliance."
+
 	
 	"The main findings of Experiment 1 are that viewers	can detect and retain information about named targets that they have never seen before at an RSVP duration 	as short as 13 ms, and that they can do so even when they have no information about the target until after presentation. \cite{Potter2014}"
 	
 	"These findings have practical implications for icon design. When creating new icons for time critical user interfaces, icons should be kept as simple as possible and employ familiar, commonly used, graphics. \cite{doi:10.1177/2041669518780807}"
 	
 	"In a global landscape increasingly shaped by technology, artificial intelligence (AI) is emerging as a disruptive force, redefining not only our daily lives but also the very essence of governance. \cite{Filgueiras_2026}"
-	
-	"Participant recruitment is a critical component of humancentric computing (HCC) research, directly influencing the validity and generalizability of study findings \cite{10714565}"
 
 \section{Components of Visual FactSheet}\label{ComponentsVFS}
 
