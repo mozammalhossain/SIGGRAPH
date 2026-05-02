@@ -436,7 +436,7 @@ Regardless of whether the service is free or paid, AIS providers must demonstrat
 
 	Furthermore, despite its substantial data driven operations, neither Equifax’s \enquote{Terms of Use} nor its \enquote{Privacy Statement} mentions the use of ML. However, the company publicly acknowledges the deployment of advanced ML models to detect complex patterns and improve the predictive accuracy of its credit assessment tools \cite{equifaxAI}. Consequently, we were unable to examine the details of their ML architecture, performance, associated risks, or potential issues related to fairness and bias in the underlying training datasets.
 
-\section{User Survey}
+\section{User Survey Design}
 
 	Making decisions with little or no information often leaves individuals feeling powerless and frustrated. This lack of clarity can lead to trust issues, particularly when sharing personal data without full control over its use. To address this, our proposed VFS aims to present the \enquote{Terms and Conditions} of a fictitious social media platform in a visual format, enabling users to make informed choices about whether to engage with the platform. The user survey was designed as an online multiple choice questionnaire, following guidelines outlined by Arlene Fink \cite{alma991013701999705153}. To conduct the survey, we created a fictitious social media platform along with corresponding \enquote{Terms and Conditions}. Our fictitious agreement is very similar to ChatGPT but not as extensive as Equifax. Using our VFS framework, we developed an end user focused presentation (Figure \ref{fig:VFS_Survey}). An open invitation (Appendix \ref{appendix:c}) was extended to students from a research university and employees of a selected information technology company to participate voluntarily. The survey consisted of three sections. In the first section, participants reviewed the fictitious “Terms and Conditions” in the traditional text based format and answered questions (Appendix \ref{appendix:b}) to assess their understanding. They were then asked whether they would use the platform. In the second section, the same “Terms and Conditions” were presented using the VFS framework (Figure \ref{fig:VFS_Survey}), supplemented by visual descriptions (Figure \ref{fig:VSLegends} and \ref{fig:surveyLegendsML}). Participants were again asked about their willingness to use the platform. Finally, we gathered feedback on their observations and the effectiveness of the VFS framework. The survey findings are presented in Section \ref{surveyResult}.
 
@@ -467,14 +467,9 @@ Regardless of whether the service is free or paid, AIS providers must demonstrat
 \subsection{Ethical Considerations}
 	To evaluate our Visual FactSheet (VFS) hypothesis that visual representations can improve transparency around data collection when using free software services such as social media, we developed an end user focused online survey distributed through multiple channels, including social media. The survey, titled \enquote{Towards a Visual FactSheet for Software Terms and Conditions Agreements}, received approval from the University of New Brunswick (UNB) Faculty of Computer Science and the UNB Research Ethics Board (REB), under file number \textbf{REB 2026‑030}. The survey aims to engage participants not only from the UNB community (students, faculty, and staff) but also from external audiences, including our industry partner, TrojAI. A subsequent modification request was submitted to the UNB REB to include a physical poster to support participant recruitment, which was also approved.
 
-	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. The project also measures participants’ subjective workload using the NASA Task Load Index (NASA TLX)\cite{hart1988development}.
+	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. 
 
-\section{Participant Sampling and Technology}
-	As mentioned earlier, each participant was presented with two versions of the T\&C: a traditional text‑only T\&C and its corresponding Visual T\&C. A random number between 1 and 2 was generated within the Qualtrics platform to determine the presentation order. This ensured that participants viewed either the text‑only T\&C first or the Visual T\&C first. Figure \ref{fig:SuveryFlow} illustrates the complete survey flow, which consists of seven sections in which participants provide their responses.
-
-	Because the social media scenario used in this study is entirely fictional, a hypothetical T\&C was developed for the project and is provided in Appendix XXX. This T\&C was created using Microsoft Co-Pilot and is modeled after the structure commonly found in commercial social media platforms such as Facebook. To produce a corresponding Visual T\&C, the project adopted the framework outlined in Section \ref{ComponentsVFS}. Figure \ref{fig:Survey_Legends_02} shows a subset of the images used to construct the Visual FactSheet (VFS) equivalent.
-	
-\subsection{Participant Enrollment}
+\section{Participant Enrollment, Sampling and Distribution Technology}
 	
 	"Participant recruitment is a critical component of humancentric computing (HCC) research, directly influencing the validity and generalizability of study findings \cite{10714565}"
 	
@@ -487,6 +482,12 @@ Regardless of whether the service is free or paid, AIS providers must demonstrat
 		\input{table/Demographics_Live.tex}
 	\end{table}
 	
+	As mentioned earlier, each participant was presented with two versions of the T\&C: a traditional text‑only T\&C and its corresponding Visual T\&C. A random number between 1 and 2 was generated within the Qualtrics platform to determine the presentation order. This ensured that participants viewed either the text‑only T\&C first or the Visual T\&C first. Figure \ref{fig:SuveryFlow} illustrates the complete survey flow, which consists of seven sections in which participants provide their responses.
+
+	Because the social media scenario used in this study is entirely fictional, a hypothetical T\&C was developed for the project and is provided in Appendix XXX. This T\&C was created using Microsoft Co-Pilot and is modeled after the structure commonly found in commercial social media platforms such as Facebook. To produce a corresponding Visual T\&C, the project adopted the framework outlined in Section \ref{ComponentsVFS}. Figure \ref{fig:Survey_Legends_02} shows a subset of the images used to construct the Visual FactSheet (VFS) equivalent.
+	
+%\subsection{Participant Enrollment}
+	
 	Although we identified several user groups, this paper concentrates exclusively on the End User group. This choice reflects our intent to prioritize the ML data producer rather than the data consumer. The remaining user groups we identified exhibit a high degree of specialization, and recruitment from these groups would require more time compared to end users, as Khalid and Brown showed that domain-specific participant recruitment often encounters challenges such as locating eligible individuals, communication delays, establishing appropriate screening criteria, and addressing trust-related concerns \cite{10714565}.
 	
 	"We conducted five focus groups and one interview with a total of 14 participants from September to November 2023 via Zoom. \cite{10.1145/3613905.3650862} Participants were recruited via Amazon MTurk, a university email list, social media (e.g., Instagram and Facebook), and authors’ personal networks. The participant pool was diverse in terms of age, gender, education, and occupation (see table 1).
@@ -496,7 +497,7 @@ Regardless of whether the service is free or paid, AIS providers must demonstrat
 	
 	"Out of all the people in the U.S. who use ChatGPT,	77\% use it as a search engine. [Adobe, How ChatGPT is changing the	way we search]"
 
-\section{Pilot Result}\label{pilotsurvey}
+\section{Pilot Survey and Results}\label{pilotsurvey}
 
 	Following ethics approval, the survey was implemented using Qualtrics and piloted with a small cohort of graduate students and faculty members from the UNB Department of Computer Science. The pilot results are presented in the following sub sections.
 
@@ -522,10 +523,11 @@ Regardless of whether the service is free or paid, AIS providers must demonstrat
 		\caption{Confidence Understanding T\&C Agreement}
 		\label{fig:confidence}
 	\end{figure}
-
-\subsection{NASA Task Load Index}
-
-	The survey measured subjective workload after completing text only and visual T\&C following NASA TLX. Pilot survey data shows that participants experienced higher mental demand, shown in Figure \ref{fig:frustation} Question 1, interpreting text only T\&C. The mental demand was doubled in comparison to visual T\&C. Participants also exhibited higher frustration reading the text only T\&C. The frustration level again more than double than that of visual T\&C. Figure \ref{fig:frustation} Question 6, represents the data collected during pilot survey.
+	
+%\subsection{NASA Task Load Index}
+\subsection{Mental Workload Measurement of Humans Performing Various Tasks}
+%	The project also measures participants’ subjective workload using the NASA Task Load Index (NASA TLX)\cite{hart1988development}.
+	The survey measured subjective workload after completing text only and visual T\&C using NASA Task Load Index (NASA TLX) \cite{hart1988development}. Pilot survey data shows that participants experienced higher mental demand, shown in Figure \ref{fig:frustation} Question 1, interpreting text only T\&C. The mental demand was doubled in comparison to visual T\&C. Participants also exhibited higher frustration reading the text only T\&C. The frustration level again more than double than that of visual T\&C. Figure \ref{fig:frustation} Question 6, represents the data collected during pilot survey.
 
 	\begin{figure}[!h]
 		\centering
