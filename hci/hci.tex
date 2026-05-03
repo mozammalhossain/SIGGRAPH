@@ -209,15 +209,16 @@
 
 \subsection{Literacy Level}
 
-	According to the OECD, one-third of working-age Americans have only limited digital skills. Furthermore, one in every six individuals lacks the ability to use e-mail, conduct web searches, or perform other essential online activities. \cite{ezell2021assessing}
+%	According to the OECD, one-third of working-age Americans have only limited digital skills. Furthermore, one in every six individuals lacks the ability to use e-mail, conduct web searches, or perform other essential online activities. \cite{ezell2021assessing}
+	Reading and numeracy are two of the foundational skills for everyday activities. Yet, 
+	"Foundational skills such as in science, numeracy and reading are essential for everyday activities. Evidence from the first round of the OECD Programme for the International Assessment of Adult Competencies (PIAAC) shows that high levels of proficiency in literacy and numeracy, and in problem solving in digital environments, go hand in hand. On the other hand, low levels of proficiency in literacy, and particularly in numeracy, may be significant barriers to using ICT applications to manage information effectively (OECD, 2013[15])."\cite{OECD_Digital_literacy}
 	
-	OECD Literacy Proficiency \cite{OECD}
-	
-	
-	The Simple Measure of Gobbledygook (SMOG) Formula \cite{mclaughlin1969smog} \cite{SOL}
-	
-	Gorby\footnote{https://gorby.app/readability/smog/\#calculator}
+	"Yet, according to data from the first round of Programme for the International Assessment of Adult Competencies (OECD) PIAAC, 25\% of adults on average in OECD countries lacked the most basic digital skills and another 14\% could only perform basic functions on a computer or other digital device" \cite{OECD_Digital_literacy}
 
+	"On average	across OECD countries, more than 30\% of adults with higher education qualifications have low literacy and numeracy proficiency levels, i.e. at or below level 2 (level 1 is the lowest level; level 5 is the highest). This implies that some higher education graduates may not have the adequate information-processing skills needed for employment or to solve the problems of everyday life. It also suggests that some students entering higher education may not be sufficiently prepared and higher education institutions may not able to help them build their skills to an appropriate level." \cite{OECD}
+	
+	"Level 2 is considered the baseline level of proficiency to participate effectively and productively in life." \cite{OECD} \cite{OECD_Skills}
+	
 	\begin{equation}
 	\text{g} = 3.1291 + 1.0430 \times \sqrt{\text{p}}
 %	\text{Grade} = 1.0430 \times \sqrt{\text{Polysyllables} \times \left(\frac{30}{\text{Sentences}}\right)} + 3.1291
@@ -226,6 +227,13 @@
 		\text{g} = 3.1291 + \left(1.0430 \times \sqrt{\left(\left(\left(\text{30 - s}\right) \times \left(\frac{\text{p}}{\text{s}}\right) + \text{p}\right)\right)}\right)
 	\end{equation}
 	where, g = grade reading level, p = number of polysyllabic words, s = number of sentences
+
+	ChatGPT (Using our Services section)
+	EquiFax (General Website and User Terms section)
+	
+	The Simple Measure of Gobbledygook (SMOG) Formula \cite{mclaughlin1969smog} \cite{SOL}
+	
+	Gorby\footnote{https://gorby.app/readability/smog/\#calculator}
 
 	Consequently, there is a growing demand for a system that delivers the desired information in a well-organized manner \cite{Hyun2022}. We hypothesize an image assisted documentation framework will assist understanding the complex T\&C quickly.
 	
@@ -287,12 +295,19 @@
 	robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2023.101896}"
 	
 	At the age of interactive information systems, digital icons or pictorial signs play an important role in conveying information quickly in contrast to the use of text. Universally accepted icons can also break written language and cultural barriers, and convey large amounts of information efficiently and concisely \cite{COLLAUD2022102290} \cite{doi:10.1177/2041669518780807} \cite{doi:10.1177/2041669518780807}. In addition, the human brain can process and retain information more quickly when presented visually. Potter et al. conducted an experiment in 2014 that revealed humans can process an entire image in 13 milliseconds, even if they have not seen the image before \cite{Potter2014-ih}. Based on the information presented in Sections \ref{intro} and \ref{liturea_review}, and the discussion above, we propose utilizing visual aids, i.e., images in FS for conveying necessary information to end users prior to using any AIS. Our hypothesis is that our proposed VFS will eliminate or reduce constraints that a text-heavy FS brings. To examine our hypothesis, we prepared VFS for two popular AIS using their Terms and Conditions that are presented in Section \ref{example} Figure \ref{fig:ChatGPT} and in Appendix \ref{appendix:a} Figure \ref{fig:Equifax}. In order to evaluate our proposed hypothesis, we conducted a user survey involving xx participants and presented our findings in Section \ref{surveyResult}.
+	
+	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}. Visual depictions of complex agreements not only provide clarity of the content but also can enhance a nontechnical person's decision-making process \cite{suters_emergence_2023, kim_impact_2021}. While the use of visual depictions over text-heavy content makes it easier to understand product instructions for many companies, it is uncommon to use the same strategy for capturing a user's response of proper understanding of the license agreement, despite their possible effectiveness for improving information quality, credibility, and enhancing the decision-making process \cite{kim_impact_2021}. We expect a VFS will be a useful approach to inform license information pictorially. This research anticipated that a VFS will serve as an effective method for conveying license related information in a pictorial form. Although this research introduced four types of VFS users with definitions, it concentrated only on the end-user type.
 		
 	The purpose of a FactSheet (FS) is to provide users with the essential information they need to make informed decisions before engaging with an ML assisted service. Despite its importance, the term \enquote{FactSheet} is often vague, inconsistently applied, and misunderstood. To resolve this issue, a clear, comprehensive, and actionable definition of FS in the context of RAI is needed. Because no single FS format can serve all audiences, this project will develop formalized definitions tailored to different categories of ML users.
-	
+		
 	Zhang et al. introduced privacy nutrition labels for mobile applications offering a limited subset of information, their approach is not fully applicable to ML assisted software \cite{298912}. Our proposed VFS builds upon and partially resembles Zhang et al.'s contribution but is specifically tailored for ML assisted software.
+	
+	We work includes identifying a suitable design methodology, select appropriate images, prepare a VFS and evaluate that using a end user focused survey.
 
-\section{VFS Design Methodology}\label{VFS_Methodology}
+\section{Methodology}\label{VFS_Methodology}
+
+	\subsection{VFS Design}
+	
 	To design our VFS framework, we utilized the methodology proposed by Venable, J., originated in the Design Science Research (DSR) for developing information systems, as shown in Figure \ref{fig:designscienceframework} \cite{Venable2006TheRO}. The core of this methodology is technology innovation (TI) that relies on three other tightly coupled, bi-directional components. Through the TI phase, a technology or method is created or enhanced, and we utilize this component to enhance the FS documentation process by introducing visual aids for enabling quick information transfer and clarity. We followed the image selection strategy discussed later in this Section. We evaluated our proposed VFS through a user survey and rectified our solution following the problem diagnosis and technology evaluation components of the DSR methodology.
 
 	\begin{figure}[h!]
@@ -303,11 +318,18 @@
 	\end{figure}
 
 \subsection{Image Selection}
-	While appropriate images can transfer information at lightning speed, increasing the completeness and readability of documents, inappropriate ones may result in poor results, especially in e-commerce, where icon or image selection affects click-through rate \cite{Hyun2022} \cite{10.1145/3543873.3584646}. Although in this work, we are not going to design any images for our proposed VFS, we will instead use the most commonly used, publicly available images. We need to select images carefully with the intention of avoiding misinterpretation. We aligned our image selection strategy with the image design standards discussed by Collaud et al. These are \enquote{access to meaning, familiarity, visual complexity, and aesthetic appeal} \cite{COLLAUD2022102290}.
+	While appropriate images can transfer information at lightning speed, increasing the completeness and readability of documents, inappropriate ones may result in poor results, especially in e-commerce, where icon or image selection affects click-through rate \cite{Hyun2022} \cite{10.1145/3543873.3584646}. Although in this work, we did not design any images for our proposed VFS, instead we used publicly available most commonly used images. We aligned our image selection strategy with the image design standards discussed by Collaud et al. These are \enquote{access to meaning, familiarity, visual complexity, and aesthetic appeal} and selected images carefully with the intention of avoiding misinterpretation \cite{COLLAUD2022102290}. All images used in this research for preparing the VFS were publicly available in generic form and downloaded from Flaticon.com.
 	
-\subsection{VFS Images}\label{vfsLegeds}
-	\enquote{A picture is worth a thousand words} \cite{sullivan_picture_2017}. Visual representations of complex agreements not only clarify the content but can also improve decision making for non-technical users \cite{suters_emergence_2023, kim_impact_2021}. Although many companies rely on visual materials to simplify product instructions, it is uncommon to apply the same approach when verifying a user’s understanding of software license agreements, even though visual formats may enhance information quality, credibility, and decision making \cite{kim_impact_2021}. This research anticipated that a VFS will serve as an effective method for conveying license related information in a pictorial form. Although this research introduced four types of VFS users with definitions, it concentrated only on the end-user type. All images used in this research for preparing the VFS were publicly available in generic form and downloaded from Flaticon.com.
-
+\section{Components of Visual FactSheet}\label{ComponentsVFS}
+	Data is the fuel for any ML model. Training data acts as an input for the ML model and dictates how it will perform while providing recommendations. There is a common notion that the more data an ML model is trained on, the more accurately it will perform \cite{nield2022essential}. Hence, data has become the new currency in today's interconnected world \cite{Gates:2014:DNC:2683467.2683477}. Due to this reason, we concluded users should know what data they are sharing and how the provided data will be retained, processed, and shared.
+	
+	A VFS should begin by clearly stating the purpose of the AIS service, including an example problem and how the service addresses it. Users must be informed about the types of data the AIS provider may collect during usage. While providing examples of collected data is optional, it is strongly recommended. At the very least, the provider should confirm whether data collection occurs with a clear \enquote{Yes} or \enquote{No}. If data collection is confirmed, the provider must explain why the data is collected and how it will be used in the future. Additionally, the provider should specify measures taken to ensure that no PII is included, again at least with a simple \enquote{Yes} or \enquote{No} acknowledgment.
+	
+	When user data is collected and processed, providers must disclose their data retention policies and explain how the data will be securely destroyed once the retention period ends. AIS providers frequently share collected data with affiliates, government agencies (including law enforcement), and other third-party AIS providers. In the event of business transfers, ownership of this data may also change. Providers should clearly identify all recipients of the data and specify whether it will be shared in raw or processed form.
+	
+	Regardless of whether the service is free or paid, AIS providers must demonstrate the effectiveness and value of their offerings. For AIS solutions, the accuracy of underlying machine learning models is a critical metric. Given ongoing concerns about bias and fairness, providers should inform users about the impartiality of their services, including reported accuracy, fairness, and bias percentiles. Finally, AIS services may carry inherent risks. Growing concerns include adversarial attacks on machine learning models, as well as threats such as data poisoning, model theft, and hijacking. Service providers must recognize these vulnerabilities and clearly outline the measures implemented to mitigate or prevent them.
+	
+	
 	Data is the foundational resource for any ML model. The model’s behavior is directly shaped by the training data, which ultimately affects the quality of the recommendations.  Hence, it is essential for users to understand the data they share and how these data will be stored, processed, and distributed. Figure \ref{fig:Survey_Legends_01} presents a set of images to convey the demographic information for the proposed VFS.
 	
 	The images are organized into several categories, including,
@@ -355,18 +377,6 @@
 		\scalebox{0.72}[0.72] {\input{vfs_diagram/sourcefile/Survey_Legends_Data_Machine_Learning.tex}}
 	\end{figure}
 
-\section{Components of Visual FactSheet}\label{ComponentsVFS}
-
-	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}. Visual depictions of complex agreements not only provide clarity of the content but also can enhance a nontechnical person's decision-making process \cite{suters_emergence_2023, kim_impact_2021}. While the use of visual depictions over text-heavy content makes it easier to understand product instructions for many companies, it is uncommon to use the same strategy for capturing a user's response of proper understanding of the license agreement, despite their possible effectiveness for improving information quality, credibility, and enhancing the decision-making process \cite{kim_impact_2021}. We expect a VFS will be a useful approach to inform license information pictorially.
-
-	Data is the fuel for any ML model. Training data acts as an input for the ML model and dictates how it will perform while providing recommendations. There is a common notion that the more data an ML model is trained on, the more accurately it will perform \cite{nield2022essential}. Hence, data has become the new currency in today's interconnected world \cite{Gates:2014:DNC:2683467.2683477}. Due to this reason, we concluded users should know what data they are sharing and how the provided data will be retained, processed, and shared.
-
-	A VFS should begin by clearly stating the purpose of the AIS service, including an example problem and how the service addresses it. Users must be informed about the types of data the AIS provider may collect during usage. While providing examples of collected data is optional, it is strongly recommended. At the very least, the provider should confirm whether data collection occurs with a clear \enquote{Yes} or \enquote{No}. If data collection is confirmed, the provider must explain why the data is collected and how it will be used in the future. Additionally, the provider should specify measures taken to ensure that no PII is included, again at least with a simple \enquote{Yes} or \enquote{No} acknowledgment.
-
-	When user data is collected and processed, providers must disclose their data retention policies and explain how the data will be securely destroyed once the retention period ends. AIS providers frequently share collected data with affiliates, government agencies (including law enforcement), and other third-party AIS providers. In the event of business transfers, ownership of this data may also change. Providers should clearly identify all recipients of the data and specify whether it will be shared in raw or processed form.
-
-	Regardless of whether the service is free or paid, AIS providers must demonstrate the effectiveness and value of their offerings. For AIS solutions, the accuracy of underlying machine learning models is a critical metric. Given ongoing concerns about bias and fairness, providers should inform users about the impartiality of their services, including reported accuracy, fairness, and bias percentiles. Finally, AIS services may carry inherent risks. Growing concerns include adversarial attacks on machine learning models, as well as threats such as data poisoning, model theft, and hijacking. Service providers must recognize these vulnerabilities and clearly outline the measures implemented to mitigate or prevent them.
-
 \section{VFS Case Studies}\label{example}
 
 	This research prepared two VFS using two case studies: a free ML assisted service, i.e., ChatGPT and a paid one, i.e., Equifax. Using the VFS framework, this research visually examined the types of data these services collect, process, sell, and share, as well as their transparency regarding ML models, which are core components of their functionality.
@@ -393,8 +403,9 @@
 
 	Furthermore, despite its substantial data driven operations, neither Equifax’s \enquote{Terms of Use} nor its \enquote{Privacy Statement} mentions the use of ML. However, the company publicly acknowledges the deployment of advanced ML models to detect complex patterns and improve the predictive accuracy of its credit assessment tools \cite{equifaxAI}. Consequently, we were unable to examine the details of their ML architecture, performance, associated risks, or potential issues related to fairness and bias in the underlying training datasets.
 
-\section{User Survey Design}
+\section{Visual FactSheet Survey}
 
+\subsection{Survey Design}
 	Making decisions with little or no information often leaves individuals feeling powerless and frustrated. This lack of clarity can lead to trust issues, particularly when sharing personal data without full control over its use. To address this, our proposed VFS aims to present the \enquote{Terms and Conditions} of a fictitious social media platform in a visual format, enabling users to make informed choices about whether to engage with the platform. The user survey was designed as an online multiple choice questionnaire, following guidelines outlined by Arlene Fink \cite{alma991013701999705153}. To conduct the survey, we created a fictitious social media platform along with corresponding \enquote{Terms and Conditions}. Our fictitious agreement is very similar to ChatGPT but not as extensive as Equifax. Using our VFS framework, we developed an end user focused presentation (Figure \ref{fig:VFS_Survey}). An open invitation (Appendix \ref{appendix:c}) was extended to students from a research university and employees of a selected information technology company to participate voluntarily. The survey consisted of three sections. In the first section, participants reviewed the fictitious “Terms and Conditions” in the traditional text based format and answered questions (Appendix \ref{appendix:b}) to assess their understanding. They were then asked whether they would use the platform. In the second section, the same “Terms and Conditions” were presented using the VFS framework (Figure \ref{fig:VFS_Survey}), supplemented by visual descriptions (Figure \ref{fig:VSLegends} and \ref{fig:surveyLegendsML}). Participants were again asked about their willingness to use the platform. Finally, we gathered feedback on their observations and the effectiveness of the VFS framework. The survey findings are presented in Section \ref{surveyResult}.
 
 	\begin{figure}[!t]
@@ -426,7 +437,7 @@
 
 	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. 
 
-\section{Participant Enrollment, Sampling and Distribution Technology}
+\subsection{Participant Enrollment, Sampling and Distribution Technology}
 	
 	"Participant recruitment is a critical component of humancentric computing (HCC) research, directly influencing the validity and generalizability of study findings \cite{10714565}"
 	
