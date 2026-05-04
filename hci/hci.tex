@@ -210,10 +210,11 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 		\input{table/License.tex}
 	\end{table}
 
-\subsection{Literacy Level}
+\subsection{Lack of Foundational Skills}
 
 %	According to the OECD, one-third of working-age Americans have only limited digital skills. Furthermore, one in every six individuals lacks the ability to use e-mail, conduct web searches, or perform other essential online activities. \cite{ezell2021assessing}
-	Reading and numeracy are two of the foundational skills for everyday activities. Yet, 
+	Reading and numeracy are two of the skills considered as the foundational skills performing everyday activities. Yet, 
+
 	"Foundational skills such as in science, numeracy and reading are essential for everyday activities. Evidence from the first round of the OECD Programme for the International Assessment of Adult Competencies (PIAAC) shows that high levels of proficiency in literacy and numeracy, and in problem solving in digital environments, go hand in hand. On the other hand, low levels of proficiency in literacy, and particularly in numeracy, may be significant barriers to using ICT applications to manage information effectively (OECD, 2013[15])."\cite{OECD_Digital_literacy}
 	
 	"Yet, according to data from the first round of Programme for the International Assessment of Adult Competencies (OECD) PIAAC, 25\% of adults on average in OECD countries lacked the most basic digital skills and another 14\% could only perform basic functions on a computer or other digital device" \cite{OECD_Digital_literacy}
@@ -233,6 +234,22 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 
 	ChatGPT (Using our Services section)
 	EquiFax (General Website and User Terms section)
+	
+		\begin{figure}[!t]
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[scale=0.32]{images/SMOG_ChatGPT.png}
+			\caption{SMOG ChatGPT}
+			\label{fig:SMOG_ChatGPT}
+		\end{minipage}
+		\hfill % Adds spacing between the two
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[scale=0.32]{images/SMOG_EquiFax.png}
+			\caption{SMOG EquiFax}
+			\label{fig:SMOG_EquiFax}
+		\end{minipage}
+	\end{figure}
 	
 	The Simple Measure of Gobbledygook (SMOG) Formula \cite{mclaughlin1969smog} \cite{SOL}
 	
@@ -291,8 +308,6 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 	
 	The purpose of a FactSheet (FS) is to provide users with the essential information they need to make informed decisions before engaging with an ML assisted service. Despite its importance, the term \enquote{FactSheet} is often vague, inconsistently applied, and misunderstood. To resolve this issue, a clear, comprehensive, and actionable definition of FS in the context of RAI is needed. Because no single FS format can serve all audiences, this project will develop formalized definitions tailored to different categories of ML users.
 
-	In this paper, we propose a visual documentation framework, i.e., \enquote{Visual FactSheet} (VFS), designed for non-technical users.
-
 \section{Proposed Work}
 	%	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}. 
 	A VFS should begin by clearly stating the purpose of the AIS service, including an example problem and how the service addresses it. Users must be informed about the types of data the AIS provider may collect during usage. While providing examples of collected data is optional, it is strongly recommended. At the very least, the provider should confirm whether data collection occurs with a clear \enquote{Yes} or \enquote{No}. If data collection is confirmed, the provider must explain why the data is collected and how it will be used in the future. Additionally, the provider should specify measures taken to ensure that no PII is included, again at least with a simple \enquote{Yes} or \enquote{No} acknowledgment.
@@ -300,6 +315,8 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 	At the age of interactive information systems, digital icons or pictorial signs play an important role in conveying information quickly in contrast to the use of text. Universally accepted icons can also break written language and cultural barriers, and convey large amounts of information efficiently and concisely \cite{COLLAUD2022102290} \cite{doi:10.1177/2041669518780807} \cite{doi:10.1177/2041669518780807}. In addition, the human brain can process and retain information more quickly when presented visually. Potter et al. conducted an experiment in 2014 that revealed humans can process an entire image in 13 milliseconds, even if they have not seen the image before \cite{Potter2014-ih}. Visual depictions of complex agreements not only provide clarity of the content but also can enhance a nontechnical person's decision-making process \cite{suters_emergence_2023, kim_impact_2021}. While the use of visual depictions over text-heavy content makes it easier to understand product instructions for many companies, it is uncommon to use the same strategy for capturing a user's response of proper understanding of the license agreement, despite their possible effectiveness for improving information quality, credibility, and enhancing the decision-making process \cite{kim_impact_2021}.
 	
 	Based on the information presented in Sections \ref{intro} and \ref{liturea_review}, and the discussion above, we propose utilizing visual aids, i.e., images in FS for conveying necessary information to end users prior to using any AIS. Our hypothesis is that our proposed VFS will eliminate or reduce constraints that a text-heavy FS brings. To examine our hypothesis, we prepared VFS for two popular AIS using their Terms and Conditions that are presented in Section \ref{example} Figure \ref{fig:ChatGPT} and in Appendix \ref{appendix:a} Figure \ref{fig:Equifax}. In order to evaluate our proposed hypothesis, we conducted a user survey involving xx participants and presented our findings in Section \ref{surveyResult}. We expect a VFS will be a useful approach to inform license information pictorially. This research anticipated that a VFS will serve as an effective method for conveying license related information in a pictorial form. We work includes identifying a suitable design methodology, select appropriate images, prepare a VFS and evaluate that using a end user focused survey.
+	
+	In this paper, we propose a visual documentation framework, i.e., \enquote{Visual FactSheet} (VFS), designed for non-technical users.
 
 \section{Methodology}\label{VFS_Methodology}
 
@@ -447,7 +464,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 		\input{table/Demographics_Live.tex}
 	\end{table}
 	
-	As mentioned earlier, each participant was presented with two versions of the T\&C: a traditional text‑only T\&C and its corresponding Visual T\&C. A random number between 1 and 2 was generated within the Qualtrics platform to determine the presentation order. This ensured that participants viewed either the text‑only T\&C first or the Visual T\&C first. Figure \ref{fig:SuveryFlow} illustrates the complete survey flow, which consists of seven sections in which participants provide their responses.
+	As mentioned earlier, each participant was presented with two versions of the T\&C: a traditional text‑only T\&C and its corresponding Visual T\&C. A random number between 1 and 2 was generated within the Qualtrics\footnote{https://www.qualtrics.com/} platform to determine the presentation order. This ensured that participants viewed either the text‑only T\&C first or the Visual T\&C first. Figure \ref{fig:SuveryFlow} illustrates the complete survey flow, which consists of seven sections in which participants provide their responses.
 
 	Because the social media scenario used in this study is entirely fictional, a hypothetical T\&C was developed for the project and is provided in Appendix XXX. This T\&C was created using Microsoft Co-Pilot and is modeled after the structure commonly found in commercial social media platforms such as Facebook. To produce a corresponding Visual T\&C, the project adopted the framework outlined in Section \ref{ComponentsVFS}. Figure \ref{fig:Survey_Legends_02} shows a subset of the images used to construct the Visual FactSheet (VFS) equivalent.
 	
@@ -505,7 +522,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 		\includegraphics[width=\linewidth]{images/pilotsurvey/TLX.pdf}
 		\caption{Frustration Reading T\&C}
 		\label{fig:frustation}
-\end{figure}
+	\end{figure}
 
 \subsection{Time Vs Accuracy}
 
