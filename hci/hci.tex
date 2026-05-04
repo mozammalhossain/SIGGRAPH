@@ -186,21 +186,21 @@
 	"Trustworthy Artificial Intelligence (AI) is based on seven technical requirements sustained over three main
 pillars that should be met throughout the system’s entire life cycle: it should be (1) lawful, (2) ethical, and (3)
 robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2023.101896}"
-	
+
 	ML requires a large amount of training data to achieve high accuracy. For a long time, leading and promising companies interested in developing ML based services or applications have actively or passively collected data. Companies collect data by offering free services, such as search engines, social media, and e-commerce platforms. Loyalty programs are another technique that retail companies use to collect consumer data. These companies use this data for user profiling and provide curated product recommendations or targeted advertisements. At present, 19.8 billion internet of things (IOT) devices are connected to the Internet, generating 2.5 quintillion bytes daily \cite{statistica_2, seedscientific}. This growth is projected to continue, and by 2034, 40.6 billion IOT devices will be connected, producing 527.5 zettabytes of data annually by 2029 \cite{statistica_1} \cite{statistica_2}. Hence, more data will be produced, and the data collection process will continue for the foreseeable future.
-	
+
 	Until the introduction of the General Data Protection Regulation (GDPR) in 2016, companies enjoyed an extended period without answering to any regulatory authorities about how they were collecting data and what their intention was to use it \cite{GDPR2016a}. The same applies to ML development until the emergence of artificial intelligence (AI) governance policies. The GDPR, introduced by the European Union (EU), enforces strict guidelines for the collection, processing, protection, ownership, retention period, and use of data for any purpose. This poses an enormous data collection and usage challenge for companies that are either developers or users of ML assisted software systems.
-	
+
 \section{Problem Statement}\label{probstat}
 
 	In a world increasingly influenced by technological advancements, AI/ML is emerging as a powerful force, reshaping our everyday lives and the core principles of governance \cite{Filgueiras_2026}. And data is the forefront of everything that ML assisted services does. The rise of generative AI applications, users should be informed, or service providers should disclose, details about the underlying AI technology, data collection, processing, privacy practices, and data usage in a way that is easy to understand. Unfortunately, text-based T\&C is the only approach currently used. As the GDPR became effective in May 2018 for all EU member countries, companies adapted to the data collection and usage challenge and complied with GDPR regulations by adding data collection and use clauses in their \enquote{Terms and Conditions} (T\&C) or \enquote{Terms of Use} agreements (a legal contract between the service provider and users), which are traditionally used for safeguarding products and their usage \cite{buttarelli_we_2019}. A Deloitte survey in 2017 revealed that 91\% of 2,000 U.S. participants accepted T\&C or \enquote{Terms of Use} agreements without reading them. The same survey found that this trend was even stronger among individuals aged 18–38, with 97\% agreeing without reading \cite{cakebread_youre_2014}. Similarly, Obar et al. conducted a study using a fictitious social networking platform with two documents: a privacy policy (PP) and terms of service (TOS). They estimated that reading the PP and TOS would take 29–32 and 15–17 minutes, respectively, yet participants spent only 73 and 51 seconds before agreeing. Among 543 participants, mostly undergraduate students from a large communication class at a public university in the eastern U.S., 97\% agreed to the PP and 93\% to the TOS \cite{obar_biggest_2016}. These finding led us to question ourselves and encouraged to understand the following questions:
-	
+
 	\begin{itemize}
 		\item Why users are facing challenges interpreting T\&C
 		\item How these challenges can be reduced
 %		\item How image can play a role here.
 	\end{itemize}
-	
+
 	For English-speaking adults, the average oral reading rate is 183 words per minute (wpm), and the silent reading rate can be up to 280-320 wpm \cite{brysbaert_how_2019, obar_biggest_2016}. Table \ref{tab:lincenseLength} shows the word counts of license agreements for some of the most popular and widely used applications and services. It is surprising to observe that some of the most popular free service providers, i.e., Meta, Tinder, Microsoft, etc., crafted their license agreements in such a way that for a regular user, it could take 14.4 to 63.5 minutes to read. The results in Table \ref{tab:lincenseLength} are based on data from 2020. We assume that most users do not spend much time reviewing and understanding their rights, responsibilities, data collection, and possible usage before agreeing to them. This assumption is based on the survey findings of Obar et al., where participants agreed to share their data with the United States National Security Agency, employer, and provided their first-born child as payment for social networking service access \cite{obar_biggest_2016}. From the above discussion, it is clear that traditional, text-heavy, lengthy legal agreements between service providers and users are inadequate for delivering appropriate messages to their audience. An easily understandable communication mechanism or framework is a requirement for ML assisted software services to inform users about their rights and responsibilities.
 
 	\begin{table}[h!]
@@ -213,29 +213,30 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{Lack of Foundational Skills}
 
 %	According to the OECD, one-third of working-age Americans have only limited digital skills. Furthermore, one in every six individuals lacks the ability to use e-mail, conduct web searches, or perform other essential online activities. \cite{ezell2021assessing}
-	Reading and numeracy are two of the skills considered as the foundational skills performing everyday activities. Yet, 
+	Reading and numeracy skills are considered as the foundational skills performing everyday activities. As we are now in the digital age where essential services such as communication, financial transactions, shopping activities moved to digital platform, these foundational skills are more important. Surprisingly a large portion of the world's population don't poses this skills. According to Organization for Economic Co-operation and Development (OECD), one-third of working-age Americans have only limited digital skills. Furthermore, one in every six individuals lacks the ability to use e-mail, conduct web searches, or perform other essential online activities. \cite{ezell2021assessing}.  OECD Programme for the International Assessment of Adult Competencies (PIAAC) has shown high levels of proficiency in literacy and numeracy are essential in the digital environments \cite{OECD_Digital_literacy}. Yet, according to data from the first round of PIAAC, 25\% of adults on average in OECD countries lacked the most basic digital skills and another 14\% could only perform basic functions on a computer or other digital device" \cite{OECD_Digital_literacy}.
 
-	"Foundational skills such as in science, numeracy and reading are essential for everyday activities. Evidence from the first round of the OECD Programme for the International Assessment of Adult Competencies (PIAAC) shows that high levels of proficiency in literacy and numeracy, and in problem solving in digital environments, go hand in hand. On the other hand, low levels of proficiency in literacy, and particularly in numeracy, may be significant barriers to using ICT applications to manage information effectively (OECD, 2013[15])."\cite{OECD_Digital_literacy}
-	
-	"Yet, according to data from the first round of Programme for the International Assessment of Adult Competencies (OECD) PIAAC, 25\% of adults on average in OECD countries lacked the most basic digital skills and another 14\% could only perform basic functions on a computer or other digital device" \cite{OECD_Digital_literacy}
+	OECD identifed five level of proficiency where Level 2 is considered the baseline level of proficiency to participate effectively and productively in life \cite{OECD} \cite{OECD_Skills}. On average	across OECD countries, more than 30\% of adults with higher education qualifications are at or below level 2. This implies that some higher education graduates may not have the adequate information-processing skills needed for employment or to solve the problems of everyday life \cite{OECD}.
 
-	"On average	across OECD countries, more than 30\% of adults with higher education qualifications have low literacy and numeracy proficiency levels, i.e. at or below level 2 (level 1 is the lowest level; level 5 is the highest). This implies that some higher education graduates may not have the adequate information-processing skills needed for employment or to solve the problems of everyday life. It also suggests that some students entering higher education may not be sufficiently prepared and higher education institutions may not able to help them build their skills to an appropriate level." \cite{OECD}
-	
-	"Level 2 is considered the baseline level of proficiency to participate effectively and productively in life." \cite{OECD} \cite{OECD_Skills}
-	
-	\begin{equation}
-	\text{g} = 3.1291 + 1.0430 \times \sqrt{\text{p}}
-%	\text{Grade} = 1.0430 \times \sqrt{\text{Polysyllables} \times \left(\frac{30}{\text{Sentences}}\right)} + 3.1291
+	The Simple Measure of Gobbledygook (SMOG) is a widely accepted method for evaluating qualification for an user to absorb written content. Primarily designed for healthcare domain, this method can also be apply to evaluate technical and legal documents. Equation \ref{mainSMOG} shows the primary grade reading level calculation method and Equation \ref{updatedSMOG} presents the mathematical method where number of sentences in a document is more than or equal to thirty \cite{mclaughlin1969smog} \cite{SOL}. Equation \ref{updatedSMOG} can be further simplified as Equation \ref{simplifiedSMOG} that Gorby\footnote{https://gorby.app/readability/smog/\#calculator} uses to SMOG scoring.
+
+	\begin{equation}\label{mainSMOG}
+		\text{g} = 3.1291 + 1.0430 \times \sqrt{\text{p}}
+		%	\text{Grade} = 1.0430 \times \sqrt{\text{Polysyllables} \times \left(\frac{30}{\text{Sentences}}\right)} + 3.1291
 	\end{equation}
-	\begin{equation}
+	\begin{equation}\label{updatedSMOG}
 		\text{g} = 3.1291 + \left(1.0430 \times \sqrt{\left(\left(\left(\text{30 - s}\right) \times \left(\frac{\text{p}}{\text{s}}\right) + \text{p}\right)\right)}\right)
+	\end{equation}
+
+	\begin{equation}\label{simplifiedSMOG}
+		\text{g} = 1.0430 \times \sqrt{\text{p} \times \left(\frac{30}{\text{s}}\right)} + 3.1291
+		%	\text{Grade} = 1.0430 \times \sqrt{\text{Polysyllables} \times \left(\frac{30}{\text{Sentences}}\right)} + 3.1291
 	\end{equation}
 	where, g = grade reading level, p = number of polysyllabic words, s = number of sentences
 
 	ChatGPT (Using our Services section)
 	EquiFax (General Website and User Terms section)
-	
-		\begin{figure}[!t]
+
+	\begin{figure}[!t]
 		\begin{minipage}{0.48\textwidth}
 			\centering
 			\includegraphics[scale=0.32]{images/SMOG_ChatGPT.png}
@@ -250,22 +251,30 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 			\label{fig:SMOG_EquiFax}
 		\end{minipage}
 	\end{figure}
-	
+
 	The Simple Measure of Gobbledygook (SMOG) Formula \cite{mclaughlin1969smog} \cite{SOL}
-	
-	Gorby\footnote{https://gorby.app/readability/smog/\#calculator}
+
+%	"Foundational skills such as in science, numeracy and reading are essential for everyday activities. Evidence from the first round of the OECD Programme for the International Assessment of Adult Competencies (PIAAC) shows that high levels of proficiency in literacy and numeracy, and in problem solving in digital environments, go hand in hand. On the other hand, low levels of proficiency in literacy, and particularly in numeracy, may be significant barriers to using ICT applications to manage information effectively (OECD, 2013[15])."\cite{OECD_Digital_literacy}
+
+%	"Yet, according to data from the first round of Programme for the International Assessment of Adult Competencies (OECD) PIAAC, 25\% of adults on average in OECD countries lacked the most basic digital skills and another 14\% could only perform basic functions on a computer or other digital device" \cite{OECD_Digital_literacy}
+
+%	"On average	across OECD countries, more than 30\% of adults with higher education qualifications have low literacy and numeracy proficiency levels, i.e. at or below level 2 (level 1 is the lowest level; level 5 is the highest). This implies that some higher education graduates may not have the adequate information-processing skills needed for employment or to solve the problems of everyday life. It also suggests that some students entering higher education may not be sufficiently prepared and higher education institutions may not able to help them build their skills to an appropriate level." \cite{OECD}
+
+%	"Level 2 is considered the baseline level of proficiency to participate effectively and productively in life." \cite{OECD} \cite{OECD_Skills}
+
+
 
 	Consequently, there is a growing demand for a system that delivers the desired information in a well-organized manner \cite{Hyun2022}. We hypothesize an image assisted documentation framework will assist understanding the complex T\&C quickly.
-	
-	The above discussion tells us it is not entirely user inability to interpret T\&C due to their limitation of reading capability but also for a deliberative action taken by the companies to make them unreadable. 
-	
+
+	The above discussion tells us it is not entirely user inability to interpret T\&C due to their limitation of reading capability but also for a deliberative action taken by the companies to make them unreadable.
+
 \section{Literature Review}\label{liturea_review}
 
 	The advancement of IoT technologies and social networking services is fueling the expansion of big data. However, the sheer volume of data makes it challenging for users to locate the information they require from these sources \cite{Hyun2022}.
-	
+
 	Guided by the discussion presented in Section \ref{probstat}, we investigated existing contribution in three criteria. At the beginning, we wanted to understand complexity of the T\&C, whether they understand what was in those T\&C, and how users are reacting to those. Secondly, we investigated efforts made in the RAI domain to ensure its goals. Finally, we investigated applicability of image based documentation framework to assist interpreting complex, tex-heavy T\&C. Our findings of each criteria are discussed in next three sub-sections.
-	
-	We conducted our literature review in three fields. We wanted to investigate 
+
+	We conducted our literature review in three fields. We wanted to investigate
 	\begin{itemize}
 		\item Initiatives made to make T\&C more easily consumed,
 		\item How image can assist translating complex documents, and
@@ -274,54 +283,54 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 
 \subsection{Terms and Conditions}
 
-	"Whenever a new communication technology is adopted widely in society, scholars tend to be concerned about the credibility of the information from it. This is because most users most of the time do not have the bandwidth to carefully examine the veracity of the information themselves; they rely on the credibility of the source instead to decide whether or not they should believe in the information provided by that source. \cite{10.1145/3613905.3650862}" 
+	"Whenever a new communication technology is adopted widely in society, scholars tend to be concerned about the credibility of the information from it. This is because most users most of the time do not have the bandwidth to carefully examine the veracity of the information themselves; they rely on the credibility of the source instead to decide whether or not they should believe in the information provided by that source. \cite{10.1145/3613905.3650862}"
 	"As new communication technologies gain widespread acceptance in society, academics frequently voice concerns about the reliability of the information they convey. This apprehension stems from the fact that most users often lack the time or capacity to independently verify the truthfulness of the information; instead, they rely on the perceived trustworthiness of the source to decide whether to accept the information as credible."
-	
+
 	"Whenever a new communication technology becomes widely adopted in society, scholars often express concerns about the credibility of the information it disseminates. This concern arises because most users, most of the time, lack the capacity to thoroughly verify the accuracy of the information themselves; instead, they depend on the credibility of the source to determine whether they should trust the information provided."
 
 \subsection{RAI Initiative}
 
 	A Fact Sheet is defined as \enquote{a single-page or other brief document presenting facts relevant to a specific issue} \cite{oxford_university_press_fact_nodate}. In ML development, a \enquote{Fact Sheet}, also referred to as a enquote{FactSheets} (FS), is a documentation framework designed to support responsible AI (RAI) practices \cite{arnold_factsheets_2018}. It is considered the cornerstone of all governance tools, including fairness, bias detection and mitigation, explainability, robustness, and causal inference. Originally introduced by Arnold et al., the FS framework aims to promote transparency and trustworthiness in ML-assisted software services or applications for auditors and developers. This trust is achieved by documenting every stage of the ML development lifecycle \cite{arnold_factsheets_2018}. Acting as a repository for the outputs of RAI tools, FS extends traditional software documentation with a strict focus on the development of ML. Hind et al. noted that the FS proposed by Arnold et al. can serve multiple purposes for different stakeholders, although end users were largely overlooked in their design \cite{hind_experiences_2020}. Other initiatives include Michell et al.’s “Model Cards”, Other initiatives include Michell et al.’s \enquote{Model Cards} which emphasize reporting performance, use cases, and fairness \cite{mitchell_model_2019}. Gebru et al. proposed \enquote{Datasheets for Datasets}, a comprehensive data-focused document answering 57 questions on data collection, processing, and usage \cite{gebru_datasheets_2021}. Both Arnold et al. and Hind et al. adopted a question-and-answer methodology targeting developers, data scientists, technical stakeholders, and testers, but excluded end users from their work \cite{arnold_factsheets_2018, hind_experiences_2020}. Similarly, Kasia et al.’s \enquote{CLeAR} framework supports AI practitioners and policymakers, yet fails to address end-user needs \cite{chmielinski2024the}. In summary, FSs are vital throughout an ML project, from development to deployment.
-	
+
 \subsection{Use of Image}
-	
+
 	"The main findings of Experiment 1 are that viewers	can detect and retain information about named targets that they have never seen before at an RSVP duration 	as short as 13 ms, and that they can do so even when they have no information about the target until after presentation. \cite{Potter2014}"
-	
+
 	"These findings have practical implications for icon design. When creating new icons for time critical user interfaces, icons should be kept as simple as possible and employ familiar, commonly used, graphics. \cite{doi:10.1177/2041669518780807}"
 	"These findings offer valuable insights for the creation of icons. In designing icons for interfaces where quick user interaction is crucial, it is essential to keep the designs minimalistic and incorporate graphics that users are already accustomed to and can easily recognize."
-	
+
 	"Icons play an important role in our daily lives. As pictorial signs, they express words, functions, or instructions in a nonverbal language. We see them at the train station, at the airport, in the museum, at the workplace, on the road as well as on almost every interactive user interface" \cite{COLLAUD2022102290}.
-	
+
 	"Icons are integral to our daily routines. These pictorial symbols communicate words, actions, or instructions without the use of verbal language. We encounter them in places like train stations, airports, museums, workplaces, on roads, and across almost every interactive user interface."
-	
+
 	Icons can replace dense text to
-	
+
 \subsection{Discussion}
 	"Currently, no standard or widely accepted best practices exist	for model licensing. But does this lack of standardization lead to undesired consequences? \cite{10.5555/3780338.3783609} To foster a more standardized future	for model licensing, we also propose a new draft of model licenses, ModelGo Licenses (MGLs),
 	to address these challenges and promote better compliance."
-	
+
 	Currently, there is no standardized framework for documenting key aspects of ML models, such as how training data are collected and processed, or how model performance is evaluated. The FS, \enquote{Model Cards}, \enquote{Datasheets for Datasets}, and \enquote{CLeAR} initiatives represent significant steps toward achieving RAI objectives. However, these efforts have largely overlooked the importance of involving end users. Moreover, they lack a unified template for capturing all relevant ML details. Although Arnold et al. proposed a project-specific FS template, it cannot be considered a universal standard \cite{arnold_factsheets_2018}.  Similarly, Hind et al. and Arnold et al. anticipated that FS would serve multiple user groups but failed to classify these groups or provide clear guidelines on which ML details should be included for different FS types \cite{arnold_factsheets_2018, hind_experiences_2020}. Zhang et al. introduced privacy nutrition labels for mobile applications offering a limited subset of information, their approach is not fully applicable to ML assisted software \cite{298912}. Our proposed VFS builds upon and partially resembles Zhang et al.'s contribution but is specifically tailored for ML assisted software.
-	
+
 	The lack of a standardized documentation framework for explaining ML systems, such as how training data are collected, processed, and how model performance is evaluated, has led to the development of initiatives such as \enquote{FactSheets}, \enquote{Model Cards}, and \enquote{Datasheets for Datasets}. Although these efforts contribute meaningfully to RAI, they generally overlook the role of end users and do not offer a unified template capable of capturing all relevant ML information. The Visual FactSheet (VFS) project aims to address these gaps by leveraging the framework shown in Figure \ref{fig:Overviewcategorizationsystem}.
-	
+
 	Governance in AI is an evolving discipline that includes key principles such as fairness, bias mitigation, explainability, robustness, causal inference, and privacy. Understanding the system's capabilities and limitations is essential for AIS users. A FS aims to provide users with all necessary information to make informed decisions. While FS is widely acknowledged as an important tool advancing RAI when implemented correctly, the term is often ambiguous, overused, and misunderstood. To ensure clarity and effectiveness, FS must have a well-defined, comprehensive, and actionable structure aligned with RAI principles. Traditionally, an FS may take the form of a lengthy, text-heavy document detailing relevant attributes across multiple sections. However, we argue that a single, exhaustive FS meets the needs of all audiences. Hence, we propose FS be tailored for distinct user groups instead of a long generic FS. We presented our work on FS user identification in Section \ref{userGroup.}.
-	
+
 	The purpose of a FactSheet (FS) is to provide users with the essential information they need to make informed decisions before engaging with an ML assisted service. Despite its importance, the term \enquote{FactSheet} is often vague, inconsistently applied, and misunderstood. To resolve this issue, a clear, comprehensive, and actionable definition of FS in the context of RAI is needed. Because no single FS format can serve all audiences, this project will develop formalized definitions tailored to different categories of ML users.
 
 \section{Proposed Work}
-	%	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}. 
+	%	\enquote{A Picture Is Worth a Thousand Words} \cite{sullivan_picture_2017}.
 	A VFS should begin by clearly stating the purpose of the AIS service, including an example problem and how the service addresses it. Users must be informed about the types of data the AIS provider may collect during usage. While providing examples of collected data is optional, it is strongly recommended. At the very least, the provider should confirm whether data collection occurs with a clear \enquote{Yes} or \enquote{No}. If data collection is confirmed, the provider must explain why the data is collected and how it will be used in the future. Additionally, the provider should specify measures taken to ensure that no PII is included, again at least with a simple \enquote{Yes} or \enquote{No} acknowledgment.
-		
+
 	At the age of interactive information systems, digital icons or pictorial signs play an important role in conveying information quickly in contrast to the use of text. Universally accepted icons can also break written language and cultural barriers, and convey large amounts of information efficiently and concisely \cite{COLLAUD2022102290} \cite{doi:10.1177/2041669518780807} \cite{doi:10.1177/2041669518780807}. In addition, the human brain can process and retain information more quickly when presented visually. Potter et al. conducted an experiment in 2014 that revealed humans can process an entire image in 13 milliseconds, even if they have not seen the image before \cite{Potter2014-ih}. Visual depictions of complex agreements not only provide clarity of the content but also can enhance a nontechnical person's decision-making process \cite{suters_emergence_2023, kim_impact_2021}. While the use of visual depictions over text-heavy content makes it easier to understand product instructions for many companies, it is uncommon to use the same strategy for capturing a user's response of proper understanding of the license agreement, despite their possible effectiveness for improving information quality, credibility, and enhancing the decision-making process \cite{kim_impact_2021}.
-	
+
 	Based on the information presented in Sections \ref{intro} and \ref{liturea_review}, and the discussion above, we propose utilizing visual aids, i.e., images in FS for conveying necessary information to end users prior to using any AIS. Our hypothesis is that our proposed VFS will eliminate or reduce constraints that a text-heavy FS brings. To examine our hypothesis, we prepared VFS for two popular AIS using their Terms and Conditions that are presented in Section \ref{example} Figure \ref{fig:ChatGPT} and in Appendix \ref{appendix:a} Figure \ref{fig:Equifax}. In order to evaluate our proposed hypothesis, we conducted a user survey involving xx participants and presented our findings in Section \ref{surveyResult}. We expect a VFS will be a useful approach to inform license information pictorially. This research anticipated that a VFS will serve as an effective method for conveying license related information in a pictorial form. We work includes identifying a suitable design methodology, select appropriate images, prepare a VFS and evaluate that using a end user focused survey.
-	
+
 	In this paper, we propose a visual documentation framework, i.e., \enquote{Visual FactSheet} (VFS), designed for non-technical users.
 
 \section{Methodology}\label{VFS_Methodology}
 
 \subsection{VFS Design}
-	
+
 	To design our VFS framework, we utilized the methodology proposed by Venable, J., originated in the Design Science Research (DSR) for developing information systems, as shown in Figure \ref{fig:designscienceframework} \cite{Venable2006TheRO}. The core of this methodology is technology innovation (TI) that relies on three other tightly coupled, bi-directional components. Through the TI phase, a technology or method is created or enhanced, and we utilize this component to enhance the FS documentation process by introducing visual aids for enabling quick information transfer and clarity. We followed the image selection strategy discussed later in this Section. We evaluated our proposed VFS through a user survey and rectified our solution following the problem diagnosis and technology evaluation components of the DSR methodology.
 
 	\begin{figure}[h!]
@@ -333,11 +342,11 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 
 \subsection{Image Selection}
 	While appropriate images can transfer information at lightning speed, increasing the completeness and readability of documents, inappropriate ones may result in poor results, especially in e-commerce, where icon or image selection affects click-through rate \cite{Hyun2022} \cite{10.1145/3543873.3584646}. In this study, we did not design or create any images for our proposed VFS; instead, we used publicly available most commonly used images. Our image selection strategy was aligned with the image design standards discussed by Collaud et al. These are \enquote{access to meaning, familiarity, visual complexity, and aesthetic appeal}, along with careful selection to avoid misinterpretation \cite{COLLAUD2022102290}. All images used in this research for preparing the VFS were publicly available in generic form and downloaded from Flaticon.com. We added additional textual context to those images using GNU Image Manipulation Program (GIMP\footnote{https://www.gimp.org/}).
-	
+
 \section{Components of Visual FactSheet}\label{ComponentsVFS}
-	
+
 	A risk based approach was adopted to design the VFS template. ML development typically involves two primary categories of risk: \enquote{data-level risks}, such as bias, distribution shift, and adversarial attacks, and \enquote{model-level risks}, including accuracy and uncertainty \cite{ZHANG2022113800}.  Instead of treating these independently, a hybrid structure was developed that combines data bias and fairness considerations into a single category, treats model accuracy separately, and provides flexibility for service providers to include additional risks relevant to their systems. Based on this structure, this research identified the following essential VFS components for end users:
-	
+
 	\begin{itemize}
 		\item Platfrom Usage Requriement,
 		\item Data Collection and Processing,
@@ -345,15 +354,15 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 		\item Machine Learning, and
 		\item Research and Monitoring.
 	\end{itemize}
-	
+
 %	Data is the fuel for any ML model. Training data acts as an input for the ML model and dictates how it will perform while providing recommendations. There is a common notion that the more data an ML model is trained on, the more accurately it will perform \cite{nield2022essential}.  Due to this reason, we concluded users should know what data they are sharing and how the provided data will be retained, processed, and shared.
-	
+
 	Data is the foundational resource for any ML model. The model’s behavior is directly shaped by the training data, which ultimately affects the quality of the recommendations. Hence, data has become the new currency in today's interconnected world \cite{Gates:2014:DNC:2683467.2683477}. It is essential for users to understand the data they share and how these data will be stored, processed, and distributed. Especially when personally identifiable information (PII) is collected.
-	
+
 	Figure \ref{fig:Survey_Legends_01} presents a set of images to convey the demographic information for the proposed VFS.
-	
+
 	When user data is collected and processed, providers must disclose their data retention policies and explain how the data will be securely destroyed once the retention period ends. AIS providers frequently share collected data with affiliates, government agencies (including law enforcement), and other third-party AIS providers. In the event of business transfers, ownership of this data may also change. Providers should clearly identify all recipients of the data and specify whether it will be shared in raw or processed form.
-	
+
 	Regardless of whether the service is free or paid, AIS providers must demonstrate the effectiveness and value of their offerings. For AIS solutions, the accuracy of underlying machine learning models is a critical metric. Given ongoing concerns about bias and fairness, providers should inform users about the impartiality of their services, including reported accuracy, fairness, and bias percentiles. Finally, AIS services may carry inherent risks. Growing concerns include adversarial attacks on machine learning models, as well as threats such as data poisoning, model theft, and hijacking. Service providers must recognize these vulnerabilities and clearly outline the measures implemented to mitigate or prevent them.
 	\begin{figure}[!t]
 		\begin{minipage}{0.48\textwidth}
@@ -373,7 +382,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 
 %	It is widely believed that increasing the amount of training data leads to improved model accuracy \cite{Gates:2014:DNC:2683467.2683477}.
 	In a similar fashion, Figure \ref{fig:Survey_Legends_02} presents images in which user data can be collected while using an AIS. Figure \ref{fig:Survey_Legends_03} shows the images that the proposed VFS utilized to inform users about data sharing or distribution approaches by the AIS service providers.
-	
+
 	\begin{figure}[!t]
 		\begin{minipage}{0.48\textwidth}
 			\centering
@@ -397,7 +406,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 
 	This research prepared two VFS using two case studies: a free ML assisted service, i.e., ChatGPT and a paid one, i.e., Equifax. Using the VFS framework, this research visually examined the types of data these services collect, process, sell, and share, as well as their transparency regarding ML models, which are core components of their functionality.
 
-	ChatGPT, developed by OpenAI and released in November 2022, is a chatbot built on a large language model (LLM) architecture that enables natural language processing and human-like interactions for information retrieval and task support \cite{ortiz_what_nodate}. In this research, we analyzed OpenAI's \enquote{Privacy Policy} and produced the VFS shown in Figure \ref{fig:ChatGPT} using the images presented in Section \ref{vfsLegeds}. 
+	ChatGPT, developed by OpenAI and released in November 2022, is a chatbot built on a large language model (LLM) architecture that enables natural language processing and human-like interactions for information retrieval and task support \cite{ortiz_what_nodate}. In this research, we analyzed OpenAI's \enquote{Privacy Policy} and produced the VFS shown in Figure \ref{fig:ChatGPT} using the images presented in Section \ref{vfsLegeds}.
 
 	The figure illustrates the categories of data collected by OpenAI during user interactions with ChatGPT, including personal details, social media information, device identifiers, and communication content. These data are processed using real-time analytics to improve user experience. The VFS further shows that OpenAI processes, shares, and retains user data indefinitely for purposes such as research, product development, and service improvement, and may share this information with government agencies, third-party vendors, and affiliated entities \cite{openai_privacy_2023}. Despite ChatGPT’s foundation in LLM technology, no public documentation is available describing its architecture, accuracy, associated risks, or potential fairness and bias concerns regarding its training data.
 
@@ -445,38 +454,38 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 	The demographic section of the survey collects information about participants’ educational background, gender, and age. These data are essential for analyzing the survey results. In the following section, participants are presented with a short story introducing a new social media website. They are then instructed to review two different versions of the platform’s terms and conditions and respond to related questions
 
 	Figure \ref{fig:VFS} presented below shows the equivalent VFS of the hypothetical social media platform.
-	
+
 \subsection{Ethical Considerations}
-	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey. 
+	It also reassures them that the survey adheres to the ethical guidelines established by the Tri Council Policy Statement of Canada, as enforced by the UNB Research Ethics Board (REB). Additionally, this section includes contact information for the responsible personnel should participants require further details or have any concerns. At the end of the section, participants are asked to provide their consent, which is recorded in accordance with REB requirements. No PII is collected or used in this survey.
 
 \subsection{Participant Enrollment, Sampling and Distribution Technology}
-	
+
 	"Participant recruitment is a critical component of humancentric computing (HCC) research, directly influencing the validity and generalizability of study findings \cite{10714565}"
-	
+
 	To evaluate our Visual FactSheet (VFS) hypothesis that visual representations can improve transparency around data collection when using free software services such as social media, we developed an end user focused online survey distributed through multiple channels, including social media. The survey, titled \enquote{Towards a Visual FactSheet for Software Terms and Conditions Agreements}, received approval from the University of New Brunswick (UNB) Faculty of Computer Science and the UNB Research Ethics Board (REB), under file number \textbf{REB 2026‑030}. The survey aims to engage participants not only from the UNB community (students, faculty, and staff) but also from external audiences, including our industry partner, TrojAI. A subsequent modification request was submitted to the UNB REB to include a physical poster to support participant recruitment, which was also approved.
-	
+
 	We have taken several methods to recruit participants. We advertise our survey through UNB media communication, campus wide physical poster, email, use of social media (e.g., Instagram and Facebook), and authors’ personal networks. We also make initiatives through presentation in an classroom and research exposition setting. Participants were not compensated either Monetary or any other form of compensation. Since the survey was anonymous in nature, we were unable to identify their geographic location. "The participant pool was diverse in terms of age, gender, and education (see Table \ref{tab:demography}) \cite{10.1145/3613905.3650862}."
-	
+
 	\begin{table}[!h]
 		\centering
 		\caption{Demography}
 		\label{tab:demography}
 		\input{table/Demographics_Live.tex}
 	\end{table}
-	
+
 	As mentioned earlier, each participant was presented with two versions of the T\&C: a traditional text‑only T\&C and its corresponding Visual T\&C. A random number between 1 and 2 was generated within the Qualtrics\footnote{https://www.qualtrics.com/} platform to determine the presentation order. This ensured that participants viewed either the text‑only T\&C first or the Visual T\&C first. Figure \ref{fig:SuveryFlow} illustrates the complete survey flow, which consists of seven sections in which participants provide their responses.
 
 	Because the social media scenario used in this study is entirely fictional, a hypothetical T\&C was developed for the project and is provided in Appendix XXX. This T\&C was created using Microsoft Co-Pilot and is modeled after the structure commonly found in commercial social media platforms such as Facebook. To produce a corresponding Visual T\&C, the project adopted the framework outlined in Section \ref{ComponentsVFS}. Figure \ref{fig:Survey_Legends_02} shows a subset of the images used to construct the Visual FactSheet (VFS) equivalent.
-	
+
 %\subsection{Participant Enrollment}
-	
+
 	Although we identified several user groups, this paper concentrates exclusively on the End User group. This choice reflects our intent to prioritize the ML data producer rather than the data consumer. The remaining user groups we identified exhibit a high degree of specialization, and recruitment from these groups would require more time compared to end users, as Khalid and Brown showed that domain-specific participant recruitment often encounters challenges such as locating eligible individuals, communication delays, establishing appropriate screening criteria, and addressing trust-related concerns \cite{10714565}.
-	
+
 	"We conducted five focus groups and one interview with a total of 14 participants from September to November 2023 via Zoom. \cite{10.1145/3613905.3650862} Participants were recruited via Amazon MTurk, a university email list, social media (e.g., Instagram and Facebook), and authors’ personal networks. The participant pool was diverse in terms of age, gender, education, and occupation (see table 1).
 	The focus groups were centered around five major probes: A majority of participants (93\%) answered that they frst turn to Google Search Engine
-	
+
 	This exploratory study found that users do not trust ChatGPT as much as Google and Wikipedia."
-	
+
 	"Out of all the people in the U.S. who use ChatGPT,	77\% use it as a search engine. [Adobe, How ChatGPT is changing the	way we search]"
 
 \section{Pilot Survey and Results}\label{pilotsurvey}
@@ -492,7 +501,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{Demography}
 
 	However, even with this small number of participants, it was observed that the are demographically diverse. Figure \ref{fig:gender} shows how participants identifies themselves and highest education level achieved which spread in three levels.
-	
+
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[ width=\linewidth]{images/pilotsurvey/Demography.pdf}
@@ -503,7 +512,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{Level of Understanding}
 
 	The survey inquires participants level of understanding after reviewing text only and visual T\&C. Data collected through pilot survey shows that participants exhibit higher confidence level after reviewing visual T\&C. Figure \ref{fig:confidence} shows that mean confidence for visual T\&C is higher than that of text only T\&C.
-	
+
 	\begin{figure}[!h]
 		\centering
 		\scalebox{0.75}[0.75] {\includegraphics[page=1, width=\linewidth]{images/pilotsurvey/Survey_Pilot.pdf}}
@@ -516,7 +525,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{Mental Workload Measurement of Humans Performing Various Tasks}
 	%	The project also measures participants’ subjective workload using the NASA Task Load Index (NASA TLX)\cite{hart1988development}.
 	The survey measured subjective workload after completing text only and visual T\&C using NASA Task Load Index (NASA TLX) \cite{hart1988development}. Pilot survey data shows that participants experienced higher mental demand, shown in Figure \ref{fig:frustation} Question 1, interpreting text only T\&C. The mental demand was doubled in comparison to visual T\&C. Participants also exhibited higher frustration reading the text only T\&C. The frustration level again more than double than that of visual T\&C. Figure \ref{fig:frustation} Question 6, represents the data collected during pilot survey.
-	
+
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=\linewidth]{images/pilotsurvey/TLX.pdf}
@@ -527,14 +536,14 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{Time Vs Accuracy}
 
 	During the pilot survey, it was discovered, presented in Figure \ref{fig:time} that almost all participants except one spent very less time reviewing text only and visual T\&C. However, participants were able to achieve higher accuracy answering survey questions that are directly related to the T\&C. For example, when asked about information sharing with their potential employer, participants were able to answer more accurately after reviewing visual T\&C. Figure \ref{fig:employer} shows that less participants were unsure and more participants were aware of this fact.
-	
+
 	\begin{figure}[!h]
 		\centering
 		\scalebox{0.75}[0.75] {\includegraphics[page=8, width=\linewidth]{images/pilotsurvey/Survey_Pilot.pdf}}
 		\caption{Time Spent Reviewing T\&C}
 		\label{fig:time}
 	\end{figure}
-	
+
 	\begin{figure}[!h]
 		\centering
 		\scalebox{0.75}[0.75] {\includegraphics[page=7, width=\linewidth]{images/pilotsurvey/Survey_Pilot.pdf}}
@@ -545,7 +554,7 @@ robust, both from a technical and a social perspective. \cite{10.1016/j.inffus.2
 \subsection{T\&C Preference}
 
 	At the end of the survey, participants were asked about T\&C preference, i.e., text only or visual. Data, presented in Figure \ref{fig:rating} shows that majority of participants chose visual over text only T\&C.
-	
+
 	\begin{figure}[!h]
 		\centering
 		\scalebox{0.75}[0.75] {\includegraphics[page=4, width=\linewidth]{images/pilotsurvey/Survey_Pilot.pdf}}
@@ -634,52 +643,52 @@ This research has been approved by the University of New Brunswick Research Ethi
 \begin{lstlisting}[frame=single,upquote=false,breaklines=true,columns=fullflexible,columns=fullflexible,columns=fullflexible,breakindent=0pt,basicstyle=\ttfamily\small]
 	Effective Date: [February 01, 2026] Version: 0.01
 	(Last Updated: [February 19, 2026])
-	
+
 PLEASE READ THESE TERMS CAREFULLY BEFORE USING Gaia. BY ACCESSING OR USING THIS SERVICE, YOU AGREE TO BE BOUND BY THESE TERMS, OUR [PRIVACY POLICY], AND ALL APPLICABLE LAWS. IF YOU DO NOT AGREE, DO NOT USE THE SERVICE.
 
 1. GENERAL TERMS & DEFINITIONS
 1.1. Definitions
-For the purposes of these Terms: 
-- "Content" means any information, data, text, messages, posts, images, videos, audio, software, applications, or other materials uploaded, transmitted, or displayed on or through the Service. 
-- "Data" includes all personal data, non-personal data, biometric data, location data, browsing history, search queries, device information, IP addresses, cookies, session data, and any other data collected by or through the Service, whether explicitly provided by you or inferred by automated means. 
-- "Machine Learning Model" refers to the proprietary, unregulated, and experimentally unsafe artificial intelligence systems used by Gaia to analyze, predict, and influence user behavior, content moderation, and advertising. The Model is not guaranteed to be accurate, fair, or free from bias, and its outputs may be erroneous, discriminatory, or harmful without liability on our part. 
-- "Third Parties" includes but is not limited to advertisers, affiliates, service providers, government entities, law enforcement, and any other entities with whom we may share Data. 
-- "Force Majeure" includes acts of God, natural disasters, cyberattacks, government interference, and any other events beyond our reasonable control that disrupt the Service. 
+For the purposes of these Terms:
+- "Content" means any information, data, text, messages, posts, images, videos, audio, software, applications, or other materials uploaded, transmitted, or displayed on or through the Service.
+- "Data" includes all personal data, non-personal data, biometric data, location data, browsing history, search queries, device information, IP addresses, cookies, session data, and any other data collected by or through the Service, whether explicitly provided by you or inferred by automated means.
+- "Machine Learning Model" refers to the proprietary, unregulated, and experimentally unsafe artificial intelligence systems used by Gaia to analyze, predict, and influence user behavior, content moderation, and advertising. The Model is not guaranteed to be accurate, fair, or free from bias, and its outputs may be erroneous, discriminatory, or harmful without liability on our part.
+- "Third Parties" includes but is not limited to advertisers, affiliates, service providers, government entities, law enforcement, and any other entities with whom we may share Data.
+- "Force Majeure" includes acts of God, natural disasters, cyberattacks, government interference, and any other events beyond our reasonable control that disrupt the Service.
 - "Your Acceptance" means your agreement to these Terms, which is deemed to occur when you first use the Service, create an account, or interact with Content.
 2. Eligibility & Account Creation
-2.1 Eligibility 
-- You must be at least 16 years old (or the age required by local law) to use the Platform. 
-- You must provide accurate information when creating an Account. 
+2.1 Eligibility
+- You must be at least 16 years old (or the age required by local law) to use the Platform.
+- You must provide accurate information when creating an Account.
 - The Company reserves the right to verify your identity and terminate Accounts violating these Terms.
-2.2 Account Ownership 
-- The Company owns the Platform and all intellectual property (IP) related to it. 
+2.2 Account Ownership
+- The Company owns the Platform and all intellectual property (IP) related to it.
 - Your Account is non-transferable and may be suspended or deleted at the Company's discretion.
 3. User Conduct & Prohibited Activities
-3.1 General Rules 
-- You agree not to: 
-- Violate any laws (e.g., copyright, defamation, harassment, hate speech). 
-- Engage in spam, phishing, or fraudulent activities. 
-- Impersonate others or use fake accounts. 
+3.1 General Rules
+- You agree not to:
+- Violate any laws (e.g., copyright, defamation, harassment, hate speech).
+- Engage in spam, phishing, or fraudulent activities.
+- Impersonate others or use fake accounts.
 - Upload or share illegal, harmful, or dangerous content (e.g., child abuse, terrorism, self-harm).
-3.2 Intellectual Property (IP) Rights 
-- You retain copyright to your original Content, but by posting it on the Platform, you grant the Company a non-exclusive, worldwide, royalty-free license to: 
-- Use, display, and distribute your Content (including for ads, AI training, and platform improvements). 
-- Modify and translate your Content. 
+3.2 Intellectual Property (IP) Rights
+- You retain copyright to your original Content, but by posting it on the Platform, you grant the Company a non-exclusive, worldwide, royalty-free license to:
+- Use, display, and distribute your Content (including for ads, AI training, and platform improvements).
+- Modify and translate your Content.
 - The Company's trademarks are its property.
-3.3 Third-Party Content 
-- You are responsible for Content you upload or share, including compliance with IP laws. 
+3.3 Third-Party Content
+- You are responsible for Content you upload or share, including compliance with IP laws.
 - The Company is not liable for third-party Content unless it violates these Terms.
 
 4. DATA COLLECTION, PROCESSING, AND USE
 4.1. Data Collection Methods
-We collect Data in the following ways (but not limited to): 
-- Explicit Consent: When you register, fill out forms, or interact with features requiring personal information. 
-- Implicit Collection: Through automated systems, sensors, algorithms, and third-party integrations, including but not limited to: 
-- Passive Tracking: Cookies, pixels, beacons, and other tracking technologies to monitor your interactions, location, and device behavior. 
-- Biometric Data: Voice patterns, facial recognition (if enabled), typing speed, and other biometric indicators. 
-- Device Data: IP addresses, MAC addresses, hardware specs, operating system, app versions, and unique device identifiers. 
-- Behavioral Data: Every click, swipe, like, share, search query, and dwell time recorded in real-time. 
-- Off-Service Data: Information collected from other apps, websites, or services you use that integrate with ours. 
+We collect Data in the following ways (but not limited to):
+- Explicit Consent: When you register, fill out forms, or interact with features requiring personal information.
+- Implicit Collection: Through automated systems, sensors, algorithms, and third-party integrations, including but not limited to:
+- Passive Tracking: Cookies, pixels, beacons, and other tracking technologies to monitor your interactions, location, and device behavior.
+- Biometric Data: Voice patterns, facial recognition (if enabled), typing speed, and other biometric indicators.
+- Device Data: IP addresses, MAC addresses, hardware specs, operating system, app versions, and unique device identifiers.
+- Behavioral Data: Every click, swipe, like, share, search query, and dwell time recorded in real-time.
+- Off-Service Data: Information collected from other apps, websites, or services you use that integrate with ours.
 - Inferred Data: Using proprietary algorithms and Machine Learning Models, we derive hidden patterns, preferences, and predictions about you that you may not realize we possess.
 4.2. Data Processing & Storage
 - Data is processed using proprietary, undocumented, and experimentally unsafe Machine Learning Models that may infer, predict, or manipulate your behavior.
@@ -687,12 +696,12 @@ We collect Data in the following ways (but not limited to):
 - Data may be stored indefinitely or until we deem it necessary to retain, modify, or delete it.
 - We do not guarantee the security, accuracy, or completeness of Data collected or processed by our systems.
 4.3. Data Sharing & Disclosure
-We may share Data with: 
-- Affiliates & Service Providers: Companies that help us operate the Service (e.g., cloud providers, moderation tools). 
-- Advertisers & Partners: To deliver targeted advertising, sponsored Content,and personalized experiences. 
-- Government & Law Enforcement: As required by law or in response to legal requests, including national security concerns. 
-- Third-Party Platforms: When you use features that integrate with other services (e.g., login with Google, share to Instagram). 
-- Research Institutions & Academic Partners: For experimental, unregulated, and potentially biased studies on user behavior. 
+We may share Data with:
+- Affiliates & Service Providers: Companies that help us operate the Service (e.g., cloud providers, moderation tools).
+- Advertisers & Partners: To deliver targeted advertising, sponsored Content,and personalized experiences.
+- Government & Law Enforcement: As required by law or in response to legal requests, including national security concerns.
+- Third-Party Platforms: When you use features that integrate with other services (e.g., login with Google, share to Instagram).
+- Research Institutions & Academic Partners: For experimental, unregulated, and potentially biased studies on user behavior.
 - Any Other Entity We Deem Necessary: Without your prior consent, including in cases of Force Majeure or emergency situations. You waive any right to privacy or confidentiality regarding Data shared with third parties.
 
 5. MACHINE LEARNING & CONTENT MODERATION
@@ -715,7 +724,7 @@ We may share Data with:
 6. LIABILITY, INDEMNIFICATION, AND DISCLAIMERS
 6.1. Liability for Harm
 We are not liable for:
-- Neither we nor any of our affiliates or licensors will be liable for any indirect, incidental, special, consequential, or exemplary damages, including damages for loss of profits, goodwill, use, or data or other losses, even if we have been advised of the possibility of such damages. 
+- Neither we nor any of our affiliates or licensors will be liable for any indirect, incidental, special, consequential, or exemplary damages, including damages for loss of profits, goodwill, use, or data or other losses, even if we have been advised of the possibility of such damages.
 - Harm caused by Content (including but not limited to defamation, invasion of privacy, emotional distress, or financial loss).
 - Errors, omissions, interruptions, or system failures in the Service.
 - Unauthorized access, tampering, or interference by third parties.
@@ -742,7 +751,7 @@ These Terms are governed by the laws of North America, without regard to its con
 7.2. Arbitration Agreement
 You agree to bind any disputes arising from these Terms to individual arbitration in accordance with your country's Consumer Arbitration Rules. You waive your right to a jury trial and class-action participation.
 7.3. Class And Jury Trial Waivers.
-You and Gaia agree that Disputes must be brought on an individual basis only, and may not be brought as a plaintiff or class member in any purported class, consolidated, or representative proceeding. Class arbitrations, class actions, and representative actions are prohibited. Only individual relief is available. The parties agree to sever and litigate in court any request for public injunctive relief after completing arbitration for the underlying claim and all other claims. This does not prevent either party from participating in a class-wide settlement. You and Gaia knowingly and irrevocably waive any right to trial by jury in any action, proceeding, or counterclaim. 
+You and Gaia agree that Disputes must be brought on an individual basis only, and may not be brought as a plaintiff or class member in any purported class, consolidated, or representative proceeding. Class arbitrations, class actions, and representative actions are prohibited. Only individual relief is available. The parties agree to sever and litigate in court any request for public injunctive relief after completing arbitration for the underlying claim and all other claims. This does not prevent either party from participating in a class-wide settlement. You and Gaia knowingly and irrevocably waive any right to trial by jury in any action, proceeding, or counterclaim.
 
 8. MISCELLANEOUS
 8.1. Assignment
@@ -769,7 +778,7 @@ BY USING Gaia, YOU ACCEPT AND AGREE TO ALL THE TERMS ABOVE.
 		\label{tab:presentation}
 		\input{table/Question_Presentation.tex}
 	\end{table}
-	
+
 \subsection{Comprehension}
 	\begin{table}[!h]
 		\centering
@@ -784,7 +793,7 @@ BY USING Gaia, YOU ACCEPT AND AGREE TO ALL THE TERMS ABOVE.
 		\label{tab:TLX}
 		\input{table/Question_TLX.tex}
 	\end{table}
-	
+
 	\subsection{Final Thoughts}
 	\begin{table}[!h]
 		\centering
